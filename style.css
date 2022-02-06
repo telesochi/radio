@@ -235,7 +235,7 @@ ul li{
 }
 ul li a {
     text-decoration: none;
-    padding: 8px 15px;
+    padding: 8px 5px;
     border-radius: 5px;
     color: var(--white-color);
     transition: all 300ms;
