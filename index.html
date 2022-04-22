@@ -1,63 +1,224 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en" >
 <head>
-	<title>music player</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+  <meta charset="UTF-8">
+  <title>telesochi.github.io/radio/</title>
+  <link rel="stylesheet" href="style.css">
 
+</head>
 <body>
 
-  <div class="main">
-  	<p id="logo"><i class="fa fa-music"></i>Music play</p>
-    
-    <!--- left part --->
-     <div class="left">
+<div class="player">
 
-      <!--- song img --->
-      <img id="track_image">
-         <div class="volume">
-            <p id="volume_show">90</p>
-            <i class="fa fa-volume-up" aria-hidden="true" onclick="mute_sound()" id="volume_icon"></i>
-            <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volume">  
-         </div>
+    <div class="player__header">
 
-     </div>
- 
+      <div class="player__img player__img--absolute slider">
 
-     <!--- right part --->
-  	 <div class="right">
+        <button class="player__button player__button--absolute--nw playlist">
 
-        <div class="show_song_no">
-          <p id="present">1</p>
-          <p>/</p>
-          <p id="total">5</p>
+          <img src="http://physical-authority.surge.sh/imgs/icon/playlist.svg" alt="playlist-icon">
+
+        </button>
+
+        <button class="player__button player__button--absolute--center play">
+
+          <img src="http://physical-authority.surge.sh/imgs/icon/play.svg" alt="play-icon">
+          <img src="http://physical-authority.surge.sh/imgs/icon/pause.svg" alt="pause-icon">
+
+        </button>
+
+        <div class="slider__content">
+
+          <img class="img slider__img" src="img/italo4you.png" alt="cover">
+          <img class="img slider__img" src="img/newgeneration.png" alt="cover">
+          <img class="img slider__img" src="img/classic.png" alt="cover">
+          <img class="img slider__img" src="img/eurodisco.png" alt="cover">
+          <img class="img slider__img" src="img/synth.png" alt="cover">
+          <img class="img slider__img" src="img/80sgold.png" alt="cover">
+          <img class="img slider__img" src="img/mix.png" alt="cover">
+
         </div>
 
-       <!--- song title & artist name --->
-      <p id="title">title.mp3</p>
-      <p id="artist">Artist name</p>
+      </div>
 
-      <!--- middle part --->
-  	 	<div class="middle">
-  	       <button onclick="previous_song()" id="pre"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
-      	   <button onclick="justplay()" id="play"><i class="fa fa-play" aria-hidden="true"></i></button>
-  	       <button onclick="next_song()" id="next"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
-  	   </div>
+      <div class="player__controls">
 
-       <!--- song duration part --->
-        <div class="duration">
-           <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()">
+        <button class="player__button back">
+
+          <img class="img" src="http://physical-authority.surge.sh/imgs/icon/back.svg" alt="back-icon">
+
+        </button>
+        
+        <p class="player__context slider__context">
+
+          <strong class="slider__name"></strong>
+          <span class="player__title slider__title"></span>
+
+        </p>
+
+        <button class="player__button next">
+
+          <img class="img" src="http://physical-authority.surge.sh/imgs/icon/next.svg" alt="next-icon">
+
+        </button>
+
+        <div class="progres">
+
+          <div class="progres__filled"></div>
+
         </div>
-           <button id="auto" onclick="autoplay_switch()">Auto play <i class="fa fa-circle-o-notch" aria-hidden="true"></i></button>
-  	</div>
 
+      </div>
+
+    </div>
+
+    <ul class="player__playlist list">
+<!------------------------------------------------------------------------------------------>
+      <li class="player__song">
+
+        <img class="player__img img" src="img/italo4you.png" alt="cover">
+
+        <p class="player__context">
+
+          <b class="player__song-name">Italo4you</b>
+          <span class="flex">
+
+            <span class="player__title">Italo Disco</span>
+            <!span class="player__song-time"--><!/span-->
+
+          </span>
+
+        </p>
+
+        <audio class="audio" src="https://ssl-1.radiohost.pl:8018/stream"></audio>
+
+      </li>
+<!------------------------------------------------------------------------------------------>
+      <li class="player__song">
+
+        <img class="player__img img" src="img/newgeneration.png" alt="cover">
+
+        <p class="player__context">
+
+          <b class="player__song-name">New Generation</b>
+          <span class="flex">
+
+            <span class="player__title">RMI</span>
+            <span class="player__song-time"></span>
+
+          </span>
+          
+        </p>
+
+        <audio class="audio" src="https://ruby.torontocast.com:1525/stream"></audio>
+
+      </li>
+<!------------------------------------------------------------------------------------------>
+      <li class="player__song">
+
+        <img class="player__img img" src="img/classic.png" alt="cover">
+
+        <p class="player__context">
+
+          <b class="player__song-name">Disco Classic</b>
+          <span class="flex">
+
+            <span class="player__title">RMI</span>
+            <span class="player__song-time"></span>
+
+          </span>
+            
+        </p>
+
+        <audio class="audio" src="https://ruby.torontocast.com:1385/stream"></audio>
+
+      </li>
+<!------------------------------------------------------------------------------------------>
+      <li class="player__song">
+
+        <img class="player__img img" src="img/eurodisco.png" alt="cover">
+
+        <p class="player__context">
+
+          <b class="player__song-name">Euro Disco</b>
+          <span class="flex">
+
+            <span class="player__title">RMI</span>
+            <span class="player__song-time"></span>
+
+          </span>
+          
+        </p>
+
+        <audio class="audio" src="https://ruby.torontocast.com:1565/stream"></audio>
+
+      </li>
+<!------------------------------------------------------------------------------------------>
+      <li class="player__song">
+
+        <img class="player__img img" src="img/synth.png" alt="cover">
+
+        <p class="player__context ">
+
+          <b class="player__song-name">Synthesizer Dance</b>
+          <span class="flex">
+
+            <span class="player__title">RMI</span>
+            <span class="player__song-time"></span>
+
+          </span>
+
+        </p>
+
+        <audio class="audio" src="https://ruby.torontocast.com:1615/stream"></audio>
+
+      </li>
+<!------------------------------------------------------------------------------------------>
+      <li class="player__song">
+
+        <img class="player__img img" src="img/80sgold.png" alt="cover">
+
+        <p class="player__context">
+
+          <b class="player__song-name">80s Gold</b>
+          <span class="flex">
+
+            <span class="player__title">RMI</span>
+            <span class="player__song-time"></span>
+
+          </span>
+
+        </p>
+
+        <audio class="audio" src="https://ruby.torontocast.com:1635/stream"></audio>
+
+      </li>
+<!------------------------------------------------------------------------------------------>
+      <li class="player__song">
+
+        <img class="player__img img" src="img/mix.png" alt="cover">
+
+        <p class="player__context ">
+
+          <b class="player__song-name">In the Mix</b>
+          <span class="flex">
+
+            <span class="player__title">RMI</span>
+            <span class="player__song-time"></span>
+
+          </span>
+
+        </p>
+
+        <audio class="audio" src="https://ruby.torontocast.com:1360/stream"></audio>
+
+      </li>
+<!------------------------------------------------------------------------------------------>
+    </ul>
 
   </div>
-   
-  <!--- Add javascript file --->
-  <script src="script.js"></script>
+<!-- partial -->
+  <script  src="./script.js"></script>
 
 </body>
 </html>
