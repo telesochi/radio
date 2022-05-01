@@ -78,8 +78,8 @@ body{
     border-radius: 1.35em ;
     flex-direction: column ;
     background-color: white ;
-    height: var(--parent-height) ;
-
+    
+height: 80% ;
 }
 
 .player__header {
@@ -410,5 +410,17 @@ img[alt ="pause-icon"] {
 .audio {
 
     display: none !important ;
+
+}
+
+
+
+
+._content {
+
+    display: flex ;
+    height: 100% ;
+    will-change : transform ;
+    transition: transform var(--cubic-slider);
 
 }
