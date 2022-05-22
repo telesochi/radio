@@ -1,230 +1,255 @@
-let previous = document.querySelector('#pre');
-let play = document.querySelector('#play');
-let next = document.querySelector('#next');
-let title = document.querySelector('#title');
-let recent_volume= document.querySelector('#volume');
-let volume_show = document.querySelector('#volume_show');
-let slider = document.querySelector('#duration_slider');
-let show_duration = document.querySelector('#show_duration');
-let track_image = document.querySelector('#track_image');
-let auto_play = document.querySelector('#auto');
-let present = document.querySelector('#present');
-let total = document.querySelector('#total');
-let artist = document.querySelector('#artist');
+// Designed by:  Mauricio Bucardo
+// Original image: https://dribbble.com/shots/6957353-Music-Player-Widget
 
+"use strict";
 
+// add elemnts
+const bgBody = ["#e5e7e9", "#ff4545", "#f8ded3", "#ffc382", "#f5eda6", "#ffcbdc", "#dcf3f3"];
+const body = document.body;
+const player = document.querySelector(".player");
+const playerHeader = player.querySelector(".player__header");
+const playerControls = player.querySelector(".player__controls");
+const playerPlayList = player.querySelectorAll(".player__song");
+const playerSongs = player.querySelectorAll(".audio");
+const playButton = player.querySelector(".play");
+const nextButton = player.querySelector(".next");
+const backButton = player.querySelector(".back");
+const playlistButton = player.querySelector(".playlist");
+const slider = player.querySelector(".slider");
+const sliderContext = player.querySelector(".slider__context");
+const sliderName = sliderContext.querySelector(".slider__name");
+const sliderTitle = sliderContext.querySelector(".slider__title");
+const sliderContent = slider.querySelector(".slider__content");
+const sliderContentLength = playerPlayList.length - 1;
+const sliderWidth = 100;
+let left = 0;
+let count = 0;
+let song = playerSongs[count];
+let isPlay = false;
+const pauseIcon = playButton.querySelector("img[alt = 'pause-icon']");
+const playIcon = playButton.querySelector("img[alt = 'play-icon']");
+const progres = player.querySelector(".progres");
+const progresFilled = progres.querySelector(".progres__filled");
+let isMove = false;
 
-let timer;
-let autoplay = 0;
+// creat functions
+function openPlayer() {
 
-let index_no = 0;
-let Playing_song = false;
-
-//create a audio Element
-let track = document.createElement('audio');
-
-
-//All songs list
-let All_song = [
- {
-     name: "Denis Disco 80S",
-     path: "https://pub0102.101.ru:8443/stream/personal/aacp/64/1781512?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJrZXkiOiJlZjMxMDdmYTJlNGY5YjZjODljNmRmMjQzMzVmZDgzMyIsIklQIjoiMTg4LjE2Mi4xNDUuMTc5IiwiVUEiOiJNb3ppbGxhXC81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXRcLzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZVwvMTAwLjAuNDg5Ni4xMjcgU2FmYXJpXC81MzcuMzYiLCJ1aWRfY2hhbm5lbCI6IjE3ODE1MTIiLCJ0eXBlX2NoYW5uZWwiOiJwZXJzb25hbCIsInR5cGVEZXZpY2UiOiJQQyIsIkJyb3dzZXIiOiJDaHJvbWUiLCJCcm93c2VyVmVyc2lvbiI6IjEwMC4wLjQ4OTYuMTI3IiwiU3lzdGVtIjoiV2luZG93cyAxMCIsImV4cCI6MTY1MTc5NTU4Nn0.vYIdSU14JVtWHFbJCwGGFSFrhJuH6oyHaNlqF03p1zc",
-     img: "img/denis.jpg",
-     singer: "1"
-   },  
-
-{
-     name: "VESTI FM",
-     path: "https://icecast-vgtrk.cdnvideo.ru/vestifm_mp3_64kbps",
-     img: "img/vesti-fm.jpg",
-     singer: "2"
-   },
-   {
-     name: "Italo4you",
-     path: "https://ssl-1.radiohost.pl:8018/stream",
-     img: "img/1.jpg",
-     singer: "3"
-   },
-   {
-     name: "New Generation",
-     path: "https://ruby.torontocast.com:1525/stream",
-     img: "img/new.png",
-     singer: "4"
-   },
-   {
-     name: "Disco Classic",
-     path: "https://ruby.torontocast.com:1385/stream",
-     img: "img/classic.png",
-     singer: "5"
-   },
-   {
-     name: "Euro Disco",
-     path: "https://ruby.torontocast.com:1565/stream",
-     img: "img/euro-disco.png",
-     singer: "6"
-   },
-
-{
-     name: "Synthesizer Dance",
-     path: "https://ruby.torontocast.com:1615/stream",
-     img: "img/synt.png",
-     singer: "7"
-   },
-
-
-{
-     name: "In the Mix",
-     path: "https://ruby.torontocast.com:1360/stream",
-     img: "img/mix.png",
-     singer: "8"
-   },
-
-
-{
-     name: "80s Gold",
-     path: "https://ruby.torontocast.com:1635/stream",
-     img: "img/80s.png",
-     singer: "9"
-   }
-
-
-
-
-];
-
-
-// All functions
-
-
-// function load the track
-function load_track(index_no){
-	clearInterval(timer);
-	reset_slider();
-
-	track.src = All_song[index_no].path;
-	title.innerHTML = All_song[index_no].name;	
-	track_image.src = All_song[index_no].img;
-    artist.innerHTML = All_song[index_no].singer;
-    track.load();
-
-	timer = setInterval(range_slider ,1000);
-	total.innerHTML = All_song.length;
-	present.innerHTML = index_no + 1;
+    playerHeader.classList.add("open-header");
+    playerControls.classList.add("move");
+    slider.classList.add("open-slider");
+    
 }
 
-load_track(index_no);
+function closePlayer() {
 
-
-//mute sound function
-function mute_sound(){
-	track.volume = 0;
-	volume.value = 0;
-	volume_show.innerHTML = 0;
+    playerHeader.classList.remove("open-header");
+    playerControls.classList.remove("move");
+    slider.classList.remove("open-slider");
+    
 }
 
+function next(index) {
+    
+    count = index || count;
 
-// checking.. the song is playing or not
- function justplay(){
- 	if(Playing_song==false){
- 		playsong();
+    if (count == sliderContentLength) {
+        count = count;
+        return;
+    }
 
- 	}else{
- 		pausesong();
- 	}
- }
+    left = (count + 1) * sliderWidth;
+    left = Math.min(left, (sliderContentLength) * sliderWidth);
+    sliderContent.style.transform = `translate3d(-${left}%, 0, 0)`;
+    count++;
+    run();
 
-
-// reset song slider
- function reset_slider(){
- 	slider.value = 0;
- }
-
-// play song
-function playsong(){
-  track.play();
-  Playing_song = true;
-  play.innerHTML = '<i class="fa fa-pause" aria-hidden="true"></i>';
 }
 
-//pause song
-function pausesong(){
-	track.pause();
-	Playing_song = false;
-	play.innerHTML = '<i class="fa fa-play" aria-hidden="true"></i>';
+function back(index) {
+    
+    count = index || count;
+
+    if (count == 0) {
+        count = count;
+        return;
+    }
+    
+    left = (count - 1) * sliderWidth;
+    left = Math.max(0, left);
+    sliderContent.style.transform = `translate3d(-${left}%, 0, 0)`;
+    count--;
+    run();
+
 }
 
+function changeSliderContext() {
 
-// next song
-function next_song(){
-	if(index_no < All_song.length - 1){
-		index_no += 1;
-		load_track(index_no);
-		playsong();
-	}else{
-		index_no = 0;
-		load_track(index_no);
-		playsong();
-
-	}
-}
-
-
-// previous song
-function previous_song(){
-	if(index_no > 0){
-		index_no -= 1;
-		load_track(index_no);
-		playsong();
-
-	}else{
-		index_no = All_song.length;
-		load_track(index_no);
-		playsong();
-	}
-}
-
-
-// change volume
-function volume_change(){
-	volume_show.innerHTML = recent_volume.value;
-	track.volume = recent_volume.value / 100;
-}
-
-// change slider position 
-function change_duration(){
-	slider_position = track.duration * (slider.value / 100);
-	track.currentTime = slider_position;
-}
-
-// autoplay function
-function autoplay_switch(){
-	if (autoplay==1){
-       autoplay = 0;
-       auto_play.style.background = "rgba(255,255,255,0.2)";
-	}else{
-       autoplay = 1;
-       auto_play.style.background = "#FF8A65";
-	}
-}
-
-
-function range_slider(){
-	let position = 0;
+    sliderContext.style.animationName = "opacity";
+    
+    sliderName.textContent = playerPlayList[count].querySelector(".player__title").textContent;
+    sliderTitle.textContent = playerPlayList[count].querySelector(".player__song-name").textContent;
+    
+    if (sliderName.textContent.length > 16) {
+        const textWrap = document.createElement("span");
+        textWrap.className = "text-wrap";
+        textWrap.innerHTML = sliderName.textContent + "   " + sliderName.textContent;  
+        sliderName.innerHTML = "";
+        sliderName.append(textWrap);
         
-        // update slider position
-		if(!isNaN(track.duration)){
-		   position = track.currentTime * (100 / track.duration);
-		   slider.value =  position;
-	      }
+    }
 
-       
-       // function will run when the song is over
-       if(track.ended){
-       	 play.innerHTML = '<i class="fa fa-play" aria-hidden="true"></i>';
-           if(autoplay==1){
-		       index_no += 1;
-		       load_track(index_no);
-		       playsong();
-           }
-	    }
-     }
+    if (sliderTitle.textContent.length >= 18) {
+        const textWrap = document.createElement("span");
+        textWrap.className = "text-wrap";
+        textWrap.innerHTML = sliderTitle.textContent + "    " + sliderTitle.textContent;  
+        sliderTitle.innerHTML = "";
+        sliderTitle.append(textWrap);
+    }
+
+}
+
+function changeBgBody() {
+    body.style.backgroundColor = bgBody[count];
+}
+
+function selectSong() {
+
+    song = playerSongs[count];
+
+    for (const item of playerSongs) {
+
+        if (item != song) {
+            item.pause();
+            item.currentTime = 0;
+        }
+
+    }
+
+    if (isPlay) song.play();
+    
+    
+}
+
+function run() {
+  
+    changeSliderContext();
+    changeBgBody();
+    selectSong();
+  
+}
+
+function playSong() {
+
+    if (song.paused) {
+        song.play();
+        playIcon.style.display = "none";
+        pauseIcon.style.display = "block";
+
+    }else{
+        song.pause();
+        isPlay = false;
+        playIcon.style.display = "";
+        pauseIcon.style.display = "";
+    }
+
+
+}
+
+function progresUpdate() {
+
+    const progresFilledWidth = (this.currentTime / this.duration) * 100 + "%";
+    progresFilled.style.width = progresFilledWidth;
+
+    if (isPlay && this.duration == this.currentTime) {
+        next();
+    }
+    if (count == sliderContentLength && song.currentTime == song.duration) {
+        playIcon.style.display = "block";
+        pauseIcon.style.display = "";
+        isPlay = false;
+    }
+}
+
+function scurb(e) {
+
+    // If we use e.offsetX, we have trouble setting the song time, when the mousemove is running
+    const currentTime = ( (e.clientX - progres.getBoundingClientRect().left) / progres.offsetWidth ) * song.duration;
+    song.currentTime = currentTime;
+
+}
+
+function durationSongs() {
+
+    let min = parseInt(this.duration / 60);
+    if (min < 10) min = "0" + min;
+
+    let sec = parseInt(this.duration % 60);
+    if (sec < 10) sec = "0" + sec;
+    
+    const playerSongTime = `${min}:${sec}`;
+    this.closest(".player__song").querySelector(".player__song-time").append(playerSongTime);
+
+}
+
+
+changeSliderContext();
+
+// add events
+sliderContext.addEventListener("click", openPlayer);
+sliderContext.addEventListener("animationend", () => sliderContext.style.animationName ='');
+playlistButton.addEventListener("click", closePlayer);
+
+nextButton.addEventListener("click", () => {
+    next(0)
+});
+
+backButton.addEventListener("click", () => {
+    back(0)
+});
+
+playButton.addEventListener("click", () => {
+    isPlay = true;
+    playSong();
+});
+
+playerSongs.forEach(song => {
+    song.addEventListener("loadeddata" , durationSongs);
+    song.addEventListener("timeupdate" , progresUpdate);
+    
+});
+
+progres.addEventListener("pointerdown", (e) => {
+    scurb(e);
+    isMove = true;
+});
+
+document.addEventListener("pointermove", (e) => {
+    if (isMove) {
+        scurb(e); 
+        song.muted = true;
+    }
+});
+
+document.addEventListener("pointerup", () => {
+    isMove = false;
+    song.muted = false;
+});
+
+playerPlayList.forEach((item, index) => {
+
+    item.addEventListener("click", function() {
+
+        if (index > count) {
+            next(index - 1);
+            return;
+        }
+        
+        if (index < count) {
+            back(index + 1);
+            return;
+        }
+
+    });
+    
+});
