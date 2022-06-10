@@ -1,27 +1,32 @@
-body {
-  font-family: "Arial", "Tahoma", "Verdana", "Helvetica", "sans-serif";
-  font-size: 10pt;
-  background-color: #fff;} 
+@-ms-viewport { 
+ width: device-width;
+}
+@-o-viewport { 
+ width: device-width;
+}
+@viewport { 
+ width: device-width;
+}
+.container { 
+  padding: 10px;
+  width: 500px;
+  margin:0 auto;
+  border: 1px solid grey;
+  font-family: 'Ubuntu Condensed', sans-serif;
 
+}
+h1, h2, h3, h4{
 
-
-
-
-.container {
-  background: #fff;
-  width: 100%;
   color: #000;
+  background-color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+
 }
 
-.body {
-  max-width: 400px;
-  margin: 3em auto 0 auto;
-  padding: 1em;
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 0.4em;
-  box-shadow: 0 0 10px rgba( 0, 0, 0, 0.5 );
-}
+
 
 h1 {
   margin: 0.5em 0 1em 0;
@@ -193,7 +198,7 @@ hr {
 
 .btmtxt {
   text-align: center;
-  color: white;
+  color: black;
   margin-top: 1em;
 }
 
