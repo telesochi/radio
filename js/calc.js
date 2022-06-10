@@ -18,7 +18,7 @@ function formatPow( p )
 
 function formatEP( ep )
 {
-  return ep.toFixed(2) + 'мм';
+  return ep.toFixed(2) + 'РјРј';
 }
 
 
@@ -75,9 +75,9 @@ function calc( lang )
   if ( D <= 0 )
   {
     if( lang == "ru" )
-      $("#err").text( "Диаметр объектива должен быть больше 0. Пропускаем вычисления с его участием." );
+      $("#err").text( "Р”РёР°РјРµС‚СЂ РѕР±СЉРµРєС‚РёРІР° РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ Р±РѕР»СЊС€Рµ 0. РџСЂРѕРїСѓСЃРєР°РµРј РІС‹С‡РёСЃР»РµРЅРёСЏ СЃ РµРіРѕ СѓС‡Р°СЃС‚РёРµРј." );
     else if( lang == "en" )
-      $("#err").text( "Диаметр объектива должен быть больше 0. Пропускаем вычисления с его участием." );
+      $("#err").text( "Р”РёР°РјРµС‚СЂ РѕР±СЉРµРєС‚РёРІР° РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ Р±РѕР»СЊС€Рµ 0. РџСЂРѕРїСѓСЃРєР°РµРј РІС‹С‡РёСЃР»РµРЅРёСЏ СЃ РµРіРѕ СѓС‡Р°СЃС‚РёРµРј." );
     $("#err").addClass("warn");
     $("#err").show();
   }
@@ -211,7 +211,7 @@ function calc( lang )
     $("#m_val").text( M.toFixed(1) );
     $("#m").show();
     if( lang == "ru" )
-      $("#moon_det_val").text( Moon.toFixed(1) + "км" );
+      $("#moon_det_val").text( Moon.toFixed(1) + "РєРј" );
     else if( lang == "en" )
       $("#moon_det_val").text( Moon.toFixed(1) + "km" );
     $("#moon_det").show();
@@ -285,7 +285,7 @@ function parseHash( lang )
 
 function add_ep( lang )
 {
-  $( "#ep_place" ).append( "<tr><td colspan=\"4\" class=\"frmhead\"><strong>Окуляр:</strong></td></tr>" );
+  $( "#ep_place" ).append( "<tr><td colspan=\"4\" class=\"frmhead\"><strong>РћРєСѓР»СЏСЂ:</strong></td></tr>" );
 }
 
 
