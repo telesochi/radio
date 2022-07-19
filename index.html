@@ -7,8 +7,10 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name = "keywords" content = "HTML, stream, radio, link, music" />
     <meta name = "description" content = "Stream radio link" />
-
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
   
@@ -23,7 +25,7 @@
 <div class="music-player">
 
                 <ul>
-                    <li class="nav-link"><a href="index.html">Home</a><a href="category.html">Category</a><a href="about.html">About</a></li>
+                    <li class="nav-link"><a href="index.html">главная</a><a href="about.html">о нас</a><a href="send_mail.html">контакт</a></li>
                 </ul>
 
 
@@ -41,12 +43,16 @@
 
 </div>
 <div class="controls">
-    <button class="btn backward-btn"><img src="images/pre.png" alt="" height="30"></button>
+    <button class="btn backward-btn"><i id="prev" class="material-icons prev"><img src="images/pre.png"></i></button>
+
+
+
+
     <button class="play-btn pause">
         <span></span>
         <span></span>
     </button>
-    <button class="btn forward-btn"><img src="images/nxt.png" alt="" height="30"></button>
+    <button class="btn forward-btn"><img src="images/nxt.png"></button>
 </div> 
 
 

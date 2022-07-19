@@ -18,9 +18,9 @@ let songs = [
 
 
 {
-        name: 'news radio',
+        name: 'новости',
         path: 'https://icecast-vgtrk.cdnvideo.ru/vestifm_aac_32kbps',
-        artist: 'Vesti FM',
+        artist: 'Вести ФМ',
         cover: 'images/cover/vesti-fm.jpg'
     },
     {
