@@ -15,18 +15,17 @@ body{
     background: #4e664f;
     font-family: 'Ubuntu Condensed', sans-serif;
 }
-/* рамка плеера */
+
 .music-player{
 max-width: 700px;
-width: 98%;
+width: 100%;
 height: center;
-
-   /* border-radius: 20px;   закругление углов */
-    background: rgba(255, 255, 255, 0.08);
+border-radius: 20px;
+background: rgba(255, 255, 255, 0.08);
    /* box-shadow: 0 40px 100px rgba(255, 255, 255, 0.1); */
-    padding: 30px;
-    overflow: hidden;
-    color: #d5eebb;
+padding: 50% 30px 50%;
+overflow: hidden;
+color: #d5eebb;
 }
 
 
@@ -56,7 +55,7 @@ height: center;
     background-image: url('images/cover/1.png');
     background-size: cover;
     box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.08);
-    animation: rotate 20s linear infinite;
+    animation: rotate 10s linear infinite;
     animation-play-state: paused;
 }
 
@@ -114,7 +113,7 @@ height: center;
 }
 
 .controls{
-    width: 60%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
