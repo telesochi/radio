@@ -20,7 +20,7 @@ let songs = [
 
 {
         name: 'муз. радио в стиле поп',
-        path: 'http://aska.ru-hoster.com:8000/stream',
+        path: 'https://aska.ru-hoster.com:8000/stream',
         artist: 'Super Radio',
         cover: 'images/cover/super-radio.jpg'
     },
