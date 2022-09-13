@@ -44,11 +44,37 @@
 <div class="disk"></div>
 
 <p class="artist-name"></p>
-
+<span id="stats">читаем..</span>
 <div class="song-slider">
     <input type="range" value="0" class="seek-bar">
     <span class="current-time">00:00</span>
-<span class="music-name"></span>
+
+
+
+
+<script src="js/icecast-metadata-stats-0.1.3.min.js"></script>
+<script>
+        const onStats = (stats) => {
+          document.getElementById("stats").innerHTML = stats.icy.StreamTitle;
+        };
+        const stats = 
+          new IcecastMetadataStats(
+            "https://ruby.torontocast.com:1525/stream", // stream endpoint
+            { onStats, sources: ["icy"] }         // options (stats callback, stats sources)
+          );
+        stats.start();
+</script>
+
+
+
+
+
+
+
+
+
+
+<span class="music-name"></span><br>
 
 </div>
 <div class="controls">
@@ -84,7 +110,7 @@
 <p>&emsp;</p>
 <center>
                 <ul>
-                    <li class="nav-link">>><a href="https://telesochi.github.io/radio/app/FMplayer.apk"><b>Скачать FMplayer</b></a><<</li>
+                    <li class="nav-link">>><a href="http://site.lentay.net/counter/counter.php?book=1"><b>Скачать FMplayer</b></a><<</li>
                 </ul>
 </center>
 <p>&emsp;</p>
