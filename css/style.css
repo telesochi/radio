@@ -223,7 +223,7 @@ body{
 
 nav {
     display: block;
-    margin: 2rem auto;
+    margin: 1rem auto;
 }
 ul li{
     list-style: none;
@@ -240,5 +240,23 @@ ul li a {
 }
 ul li a:hover {
     background-color: #4e664f;
+}
+
+
+
+
+
+
+
+//
+
+
+
+
+
+.img-wrap {
+  
+  background-color: rgba(6,0,0,.5);
+
 }
 
