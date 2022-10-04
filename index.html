@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -11,15 +14,9 @@
     <meta name = "description" content = "RadiO - онлайн stream радио и ТВ" />
 
 
-<script>
-            function show(shown, hidden) {
-                document.getElementById(shown).style.display='block';
-                document.getElementById(hidden).style.display='none';
-                return false;
-            }
-        </script>
 
 
+<script src="playerjs.js" type="text/javascript"></script>
 
 </head>
 <body>
@@ -27,27 +24,10 @@
 
 
 
-<audio src="" id="audio" preload></audio>
-
-<div id="Page1">
-
-<div class="music-player">
-
-                <ul>
-                  <center>  <li class="nav-link"><a href="https://tele-sochi.ru/tv.html">ТВ</a> <a href="#" onclick="return show('Page3','Page1');">приложение</a></li></center>
-                </ul>
 
 
 
-
-<div class="img-wrap">
-<div class="disk"></div>
-</div>
-<p class="artist-name"></p>
-
-<div class="song-slider">
-    <input type="range" value="0" class="seek-bar">
-    <span class="current-time">00:00</span>
+<iframe src="playerjs.html" width="400" height="650" type="text/html" frameborder="0" allowfullscreen></iframe>
 
 
 
@@ -55,101 +35,6 @@
 
 
 
-
-
-
-
-
-
-
-
-<span class="music-name"></span><br>
-
-</div>
-<div class="controls">
-    <button class="btn backward-btn"><img src="images/pre.png" alt="" height="30"></button>
-    <button class="play-btn pause">
-        <span></span>
-        <span></span>
-    </button>
-    <button class="btn forward-btn"><img src="images/nxt.png" alt="" height="30"></button>
-
-</div> 
-
-
-
-
-</div>
-</div>
-
-</div>
-
-
-
-
-<div id="Page2" style="display:none">
-<div class="music-player">
-<ul><center>  <li class="nav-link"><a href="#" onclick="return show('Page1','Page2');">назад</a></li> </center>
-</ul>
-<p>&emsp;</p>
-<p>&emsp;</p>            
-<p align="justify">
-<b>Соловьёв Live</b> - прямой эфир
-</p>
-<p>&emsp;</p>         
-<iframe src="http://tele-sochi.ru/playerjs.html?file=http://ott.inmart.tv:8081/19/index.m3u8" type="text/html" width= height=550 frameborder="0" allowfullscreen></iframe>
-<p>&emsp;</p>
-Владимир Соловьев в социальных сетях:<br>
-Telegram: https://t.me/SolovievLive<br>
-ВКонтакте: https://vk.com/solovievlive<p>
-
-Присоединяйтесь!</p>
-
-
-</div>
-</div>
-
-
-
-
-
-<div id="Page3" style="display:none">
-<div class="music-player">
-<ul><center>  <li class="nav-link"><a href="#" onclick="return show('Page1','Page3');">назад</a></li> </center>
-</ul>
-<p>&emsp;</p>
-
-<p>&emsp;</p>
-<p align="justify">
-Это приложение, сделано в рамках моего обучения CSS и JavaScript технологиям.
-</p>
-<p>&emsp;</p>
-<p align="justify">
-Содержит любимые мной ссылки на stream потоки взятые из открытых источников в сети интернет и проигрывает их посредством JS.
-</p>
-<p>&emsp;</p>
-<p align="justify">
-Приложение для Android OS, можно установить на телефон, планшет, автомагнитолу или домашний медиаплеер. Теперь RadiO будет всегда в паре кликов от вас!
-</p>
-<p>&emsp;</p>
-<center>
-                <ul>
-                    <li class="nav-link">>><a href="app/Radio.apk"><b>Скачать RadiO.apk</b></a><<</li>
-                </ul>
-</center>
-<p>&emsp;</p>
-<center>
-<ul>
-telegram me:<li class="nav-link"><a href="https://t.me/denisdeaf">@denisdeaf</a></li>
-</ul>
-</center>
-</div>
-</div>
-
-
-
-<script src="js/data.js" type="text/javascript"></script>   
-<script src="js/app.js" type="text/javascript"></script>
 
 </body>
 </html>

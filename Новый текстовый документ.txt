@@ -7,7 +7,7 @@ https://radio.z-kharkov.ru:8443/z-kharkov.online 		 Харьков Z
 https://fed.fmplay.ru:8000/sputnik-32.aac?uid=2564661990	 Радио Sputnik
 
 http://radio.mixto.ru:8001/patriot
-
+https://ruby.torontocast.com:1525/stream  New generation
 
 [{"title":"Вести ФМ","poster":"https://fmplay.ru/img/vesti.webp","file":"https://fed.fmplay.ru:8000/vesti-32.aac"},{"title":"Маяк","poster":"https://fmplay.ru/img/mayak.webp","file":"https://fed.fmplay.ru:8000/mayak-32.aac"},
 {"title":"Звезда","poster":"https://fmplay.ru/img/zvezda.webp","file":"https://fed.fmplay.ru:8000/zvezda-32.aac"},
@@ -16,4 +16,16 @@ http://radio.mixto.ru:8001/patriot
 {"title":"РАДИО ЖИZНЬ 9Z.ZFM","poster":"https://zhizn-fm.ru/images/pic02.jpg","file":"https://stream.zhizn-fm.ru:8443/life"},
 {"title":"Радио Sputnik","poster":"https://fmplay.ru/img/sputnik.webp","file":"https://fed.fmplay.ru:8000/sputnik-32.aac"},
 {"title":"Комсомольская правда","poster":"https://fmplay.ru/img/kpravda.webp","file":"https://fed.fmplay.ru:8000/kpravda-32.aac"},
-{"title":"Радио России","poster":"https://fmplay.ru/img/rrossii.webp","file":"https://fed.fmplay.ru:8000/rrossii-32.aac"}]
+{"title":"Радио России","poster":"https://fmplay.ru/img/rrossii.webp","file":"https://fed.fmplay.ru:8000/rrossii-32.aac"},
+{"title":"RMI New Generation","poster":"https://radiomaxitalo.com/wp-content/uploads/2018/08/RMI2-New-Logo-New-200x200.png","file":"https://ruby.torontocast.com:1525/stream"}]
+
+
+
+
+
+#4e664f   фон страницы
+
+#5c725d фон плеера
+#afc29b цвет текста
+
+#98b08c не подсвеченная кнопка
