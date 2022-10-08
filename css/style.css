@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+
+a {
+color: #d5eebb;
+text-decoration: none;
+}
+
 body{
     width: 100%;
     height: 100vh;
