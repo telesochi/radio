@@ -14,7 +14,7 @@
       };
       const player = 
         new IcecastMetadataPlayer(
-          "https://ruby.torontocast.com:1525/stream", // stream endpoint
+          "http://207.180.234.221:8000/stream", // stream endpoint
           { onMetadata }                        // options (onMetadata callback)
         );
     </script>
@@ -30,7 +30,7 @@
 &nbsp;<br>
 
       <button class="button" onclick="player.play();"><i class="fa fa-play-circle"></i></button>
-      <button class="button" onclick="player.stop();"><i class="fa fa-pause-circle"></i></button>
+      <!--button class="button" onclick="player.stop();"><i class="fa fa-pause-circle"></i></button-->
 </p>
 
 
