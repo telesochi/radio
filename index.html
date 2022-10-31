@@ -1,23 +1,22 @@
 <html>
 <head>
 
-<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/style.css">
 <script src="icecast-metadata-player-1.13.1.min.js"></script>
-   
+<style>#PS {display: none;}</style>    
 </head>
 
 <body>
- <script>
+<script>
       const onMetadata = (metadata) => {
         document.getElementById("metadata").innerHTML = metadata.StreamTitle;
       };
       const player = 
         new IcecastMetadataPlayer(
-          "https://ruby.torontocast.com:1525/stream", // stream endpoint
+          "http://audio-edge-5bkfj.fra.h.radiomast.io/9f9702d0-ac14-48aa-b7cf-909db540365b", // stream endpoint
           { onMetadata }                        // options (onMetadata callback)
         );
-    </script>
+</script>
 
 
    
@@ -26,13 +25,17 @@
 
 
 
-<p align="center"><span id="metadata">...</span><br>
-&nbsp;<br>
+<p align="center"><span id="metadata">...</span>
+<br>&nbsp;<br>
 
-      <button class="button" onclick="player.play();"><i class="fa fa-play-circle"></i></button>
-      <button class="button" onclick="player.stop();"><i class="fa fa-pause-circle"></i></button>
+
+      <button class="button" id="PL" onclick="player.play(); document.getElementById('PL').style.display = 'none';  document.getElementById('PS').style.display = 'block';"><img src="play.png" height="50"></button>
+      <button class="button" id="PS" onclick="player.stop(); document.getElementById('PS').style.display = 'none'; document.getElementById('PL').style.display = 'block';"><img src="pause.png" height="50"></button>
+
 </p>
 
-
+<!--
+<i class="fa fa-1.5x fa-play-circle"></i>
+-->
 </body>
 </html>
