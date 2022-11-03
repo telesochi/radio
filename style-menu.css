@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
-
 body {
-  margin: 20;
+  margin: 0;
   padding: 0;
-  background: #697d6a;
+  background: #232323;
   color: #cdcdcd;
-  font-family: 'Josefin Sans', Roboto;
+  font-family: "Avenir Next", "Avenir", sans-serif;overflow-x: hidden; 
 }
 
 a {
@@ -104,15 +102,4 @@ background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),opacity 0.55s ease;
 #menuToggle input:checked ~ ul {
   transform: scale(1.0, 1.0);
   opacity: 1;
-}
-
-
-
-.button {
-width: 60px;
-height: 60px;
-background-color: rgba(28,28,28,0);
-
-border: 0;
-cursor: pointer;
 }
