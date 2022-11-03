@@ -1,85 +1,112 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
 
-
-
-
-
-<html>
 <head>
-
-
-
-<link rel="stylesheet" href="style-menu.css">
- <style>#PS {display: none;}</style>  
+<style>#PS {display: none;}</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Демо: Выдвигающееся боковое меню на чистом CSS3</title>
+    <meta name="author" content="Dobrovoimaster" />
+    <meta name="description" content="Боковая панель с элементами меню, выдвигающаяся по клику, на чистом css, без использлвания javascript" />
+    <meta name="keywords" content="боковое меню, выдвижное меню, выдвигающееся по клику, боковая панеь, css3, html, css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/left-nav-style.css">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head>
 
 <body>
-<nav role='navigation'>
-  <div id="menuToggle">
-    <input type="checkbox" />
-    <span></span>
-    <span></span>
-    <span></span>
-    <ul id="menu">
-	<a href="#"><li>Вести ФМ</li></a>
-	<a href="#"><li>Комсомольская правда</li></a>
-	<a href="#"><li>Маяк</li></a>
-	<a href="#"><li>Звезда</li></a>
-	<a href="#"><li>Культура</li></a>
-	<a href="#"><li>Sputnik</li></a>
-	<a href="#"><li>Радио России</li></a>
-	<a href="#" target="_blank"><li>Italo Disco Fantasy</li></a>
-    </ul>
-  </div>
-</nav>
+    <!-- 
+    Скрытый checkbox, отвечающий за переключение панели, должен быть в верхней части документа, лучше сразу после тега `<body>`
 
-							
-<audio id="player" src="https://italo.italo.nu/fantasy"></audio>
+    `id` атрибут предназначен для связки с атрибутом `for` тега <label>
+
+    Атрибут `hidden` указывает состояние «скрытый» у текущего элемента
+    -->
+    <input type="checkbox" id="nav-toggle" hidden>
+    <!-- 
+    Выдвижную панель размещаете ниже
+    флажка (checkbox), но не обязательно 
+    непосредственно после него, например
+    можно и в конце страницы
+    -->
+    <nav class="nav">
+        <!-- 
+    Метка с именем `id` чекбокса в `for` атрибуте
+    Символ Unicode 'TRIGRAM FOR HEAVEN' (U+2630)
+    Пустой атрибут `onclick` используем для исправления бага в iOS < 6.0
+    См: http://timpietrusky.com/advanced-checkbox-hack 
+    -->
+        <label for="nav-toggle" class="nav-toggle" onclick></label>
+        <!-- 
+    Здесь размещаете любую разметку,
+    если это меню, то скорее всего неупорядоченный список <ul>
+    -->
+        <h2 class="logo"> 
+            <a href="">100RADIO</a> 
+        </h2>
+        <ul>
+            <li><a href="#1">Вести ФМ</a>
+            <li><a href="#2">Комсомольская правда</a>
+            <li><a href="#3">Маяк</a>
+            <li><a href="#4">Радио России</a>
+            <li><a href="#5">Культура</a>
+            <li><a href="#6">Sputnik</a>
+            <li><a href="#6">RT</a>
+            <li><a href="#6">New Generation</a>
+            <li><a href="#7">Italo Disco Fantasy</a> 
+        </ul>
+    </nav>
+    <!-- 
+    Маска (затемнение) основного контента при включенной панели
+    по-умолчанию данная фишка не используется, если оно вам надо,
+		просто расккоментируйте div-контейнер ниже
+		
+    <div class="mask-content"></div>
+		-->
+		
+    <!-- 
+    Далее размещаем любую разметку,
+    много слов, картинки и т.д...
+    -->
+    <main role="main">
+        <article>
+            <header>
+                <h1 class="header__title">Italo Disco Fantasy</h1>
+                <h2>Диско радио из Италии</h2> 
+            </header>
+            <section>
+               <p style="text-align: center;">
+                <audio id="player" src="https://italo.italo.nu/fantasy"></audio>
+<center><button id="PL" class="button" onclick="document.getElementById('player').play(); document.getElementById('PL').style.display = 'none';  document.getElementById('PS').style.display = 'block';"><img src="play.png" height="50"></button>
+</center><center>
+<button id="PS" class="button" onclick="document.getElementById('player').pause(); document.getElementById('PS').style.display = 'none'; document.getElementById('PL').style.display = 'block';"><img src="pause.png" height="50"></button></center>
+                <p>Fantasy Radio - это радиостанция Italo Disco и HINRG, работающая 24/7, где вы можете запросить записи (20 в день) из нашей большой музыкальной базы данных, и таким образом вы сможете слушать свои любимые треки целый день!
+Fantasy Radio всегда в движении, чтобы создать как можно больше разнообразия, и у них есть команда увлеченных ди-джеев, у всех разные стили и все они разделяют одну и ту же страсть: МУЗЫКУ!</p>
 
 
 
 
 
-
-										 
-	
-
-
-
-
-
-<style>
-.outer:before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-}
-
-.inner {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: -0.35em;
-}
-
-.outer {
-  text-align: center;
-}
-</style>
-
-<div class="outer" style="height:100%; width: 100%; border:0px solid black">
-<span class="inner" style="border:0px solid red">
-
-  <p align="center">Italo Disco Fantasy<br>&nbsp;<br>
-
-<button id="PL" class="button" onclick="document.getElementById('player').play(); document.getElementById('PL').style.display = 'none';  document.getElementById('PS').style.display = 'block';"><img src="play.png" height="50"></button>
-
-<button id="PS" class="button" onclick="document.getElementById('player').pause(); document.getElementById('PS').style.display = 'none'; document.getElementById('PL').style.display = 'block';"><img src="pause.png" height="50"></button>
-  </p>
-
-</span>
-</div>
-
-
-
+                <p></p>
+            </section>
+            <hr>
+            <footer>
+                <p><a href="http://dbmast.ru/vydvigayushheesya-bokovoe-menyu-na-chistom-css">← Изучить Детали</a>
+                <p>сделано с любовью - <a href="https://twitter.com/dobrovoi">@dobrovoi</a>
+            </footer>
+        </article>
+    </main>
 </body>
+
 </html>
