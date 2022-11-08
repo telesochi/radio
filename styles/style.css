@@ -409,7 +409,7 @@ nav .library-opened-link {
 .popup-section {
   min-height: 50vh;
   background-color: #13171ed5;
-  width: 85%;
+  width: 100%;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -455,7 +455,7 @@ nav .library-opened-link {
 }
 
 .popup-section form {
-  width: 90%;
+  width: 100%;
   -webkit-box-flex: 0.6;
       -ms-flex-positive: 0.6;
           flex-grow: 0.6;
