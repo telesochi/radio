@@ -2,7 +2,7 @@ let songs = [
   {
     name: "Вести ФМ",
     cover:
-      "./img/vesti-fm.jpg",
+      "./img/vesti.webp",
     artist: "новостное радио",
     audio: "https://icecast-vgtrk.cdnvideo.ru/vestifm_aac_32kbps",
     id: 0,
@@ -40,11 +40,11 @@ let songs = [
     id: 4,
   },
   {
-    name: "Quran5",
+    name: "Маруся ФМ",
     cover:
-      "https://chillhop.com/wp-content/uploads/2020/09/0255e8b8c74c90d4a27c594b3452b2daafae608d-1024x1024.jpg",
+      "./img/marusa.png",
     artist: "Hakim Omari5",
-    audio: null,
+    audio: "https://radio-holding.ru:9433/marusya_default",
     id: 5,
   },
 ];

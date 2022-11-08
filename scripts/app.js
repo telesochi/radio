@@ -85,7 +85,7 @@ audio.addEventListener("loadedmetadata", () => {
   durationInput.value = audio.currentTime;
   durationInput.setAttribute("max", audio.duration);
   currentTime.innerText = `${timeFormat(audio.currentTime)}`;
-  endTime.innerText = `${timeFormat(audio.duration)}`;
+  endTime.innerText = `${timeFormat(stream)}`;
 });
 audio.addEventListener("timeupdate", () => {
   durationInput.value = audio.currentTime;
