@@ -16,37 +16,57 @@ let songs = [
     id: 1,
   },
   {
-    name: "Quran2",
+    name: "Звезда",
     cover:
-      "https://chillhop.com/wp-content/uploads/2020/07/ff35dede32321a8aa0953809812941bcf8a6bd35-1024x1024.jpg",
-    artist: "Hakim Omari2",
-    audio: null,
+      "./img/zvezda.webp",
+    artist: "",
+    audio: "https://fed.fmplay.ru:8000/zvezda-32.aac",
     id: 2,
   },
   {
-    name: "Quran3",
+    name: "Маяк",
     cover:
-      "https://chillhop.com/wp-content/uploads/2020/07/ef95e219a44869318b7806e9f0f794a1f9c451e4-1024x1024.jpg",
-    artist: "Hakim Omari3",
-    audio: null,
+      "./img/mayak.webp",
+    artist: "",
+    audio: "https://fed.fmplay.ru:8000/mayak-32.aac",
     id: 3,
   },
   {
-    name: "Quran4",
+    name: "Sputnik",
     cover:
-      "https://chillhop.com/wp-content/uploads/2020/07/ff35dede32321a8aa0953809812941bcf8a6bd35-1024x1024.jpg",
-    artist: "Hakim Omari4",
-    audio: null,
+      "./img/sputnik.webp",
+    artist: "",
+    audio: "https://fed.fmplay.ru:8000/sputnik-32.aac",
     id: 4,
   },
   {
     name: "Маруся ФМ",
     cover:
       "./img/marusa.png",
-    artist: "Hakim Omari5",
+    artist: "Поп музыка",
     audio: "https://radio-holding.ru:9433/marusya_default",
     id: 5,
   },
+
+ {
+    name: "New Wave",
+    cover:
+      "./img/newwave.jpg",
+    artist: "Диско 80х",
+    audio: "https://digitalaudiobroadcasting.net/8004/stream",
+    id: 6,
+  },
+
+{
+    name: "Best Disco 80S",
+    cover:
+      "./img/dennis.jpg",
+    artist: "Диско 80х",
+    audio: "https://pub0102.101.ru:8443/stream/personal/aacp/64/1781512?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJrZXkiOiIwNjBhYzBkMDMzZDExZjg0NTFhM2NiNjlmOTA1NTlkYyIsIklQIjoiMTg4LjE2Mi4xNDIuMTk4IiwiVUEiOiJNb3ppbGxhXC81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXRcLzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZVwvMTAzLjAuMC4wIFNhZmFyaVwvNTM3LjM2IiwiUmVmIjoiaHR0cHM6XC9cLzEwMS5ydVwvIiwidWlkX2NoYW5uZWwiOiIxNzgxNTEyIiwidHlwZV9jaGFubmVsIjoicGVyc29uYWwiLCJ0eXBlRGV2aWNlIjoiUEMiLCJCcm93c2VyIjoiQ2hyb21lIiwiQnJvd3NlclZlcnNpb24iOiIxMDMuMC4wLjAiLCJTeXN0ZW0iOiJXaW5kb3dzIDEwIiwiZXhwIjoxNjU3NTg0Mzg3fQ.BeKQXembGRdmwlOYGJyWyZJnKDgjqU7LHt6gVHtcaMo#.mp3",
+    id: 7,
+  },
+
+
 ];
 storageRef
   .child("default")

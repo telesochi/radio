@@ -251,7 +251,7 @@ nav .library-opened-link {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0.2rem auto;
-  width: 60%;
+  width: 80%;
 }
 
 .sound-control input {
@@ -309,7 +309,7 @@ nav .library-opened-link {
   text-align: center;
   line-height: 10vh;
   white-space: nowrap;
-  font-size: 1.5rem;
+  font-size: 1rem;
   background-color: #231d5a;
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
