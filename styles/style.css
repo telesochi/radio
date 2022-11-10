@@ -576,4 +576,37 @@ nav .library-opened-link {
       flex-shrink: 1;
   width: 60%;
 }
+
+
 /*# sourceMappingURL=style.css.map */
+
+
+.round {
+    border-radius: 100px; /* Радиус скругления */
+   /* box-shadow: 0 0 0 3px green, 0 0 13px #333  Параметры теней */
+   }
+
+
+a:link {
+  color: #e96d5e;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #e96d5e;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #eb5847;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #e96d5e;
+  background-color: transparent;
+  text-decoration: underline;
+}
