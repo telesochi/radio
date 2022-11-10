@@ -251,7 +251,7 @@ nav .library-opened-link {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0.2rem auto;
-  width: 80%;
+  width: 60%;
 }
 
 .sound-control input {
@@ -305,15 +305,15 @@ nav .library-opened-link {
 
 .library .add-song {
   width: 100%;
-  min-height: 10vh;
+  min-height: 5vh;
   text-align: center;
-  line-height: 10vh;
+  line-height: 5vh;
   white-space: nowrap;
-  font-size: 1rem;
+  font-size: 0.7rem;
   background-color: #231d5a;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .library .add-song:hover {
@@ -432,7 +432,7 @@ nav .library-opened-link {
   top: 1rem;
   right: 1rem;
   cursor: pointer;
-  padding: 0.3rem 0.4rem;
+  padding: 0.2rem 0.4rem;
   border-radius: 50%;
   border: 1px solid #adcaf2;
 }
@@ -479,8 +479,8 @@ nav .library-opened-link {
   color: #adcaf2;
   outline: none;
   padding: 0.4rem;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .popup-section form input:focus,
@@ -580,7 +580,10 @@ nav .library-opened-link {
 
 /*# sourceMappingURL=style.css.map */
 
+p {
+  padding: 10px 20px 10px 20px;
 
+}
 .round {
     border-radius: 100px; /* Радиус скругления */
    /* box-shadow: 0 0 0 3px green, 0 0 13px #333  Параметры теней */

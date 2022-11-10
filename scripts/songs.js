@@ -3,15 +3,15 @@ let songs = [
     name: "Вести ФМ",
     cover:
       "./img/vesti.webp",
-    artist: "новостное радио",
+    artist: "Первое новостное радио",
     audio: "https://icecast-vgtrk.cdnvideo.ru/vestifm_aac_32kbps",
     id: 0,
   },
   {
-    name: "Космомольская правда",
+    name: "Комсомольская правда",
     cover:
       "./img/kpravda.webp",
-    artist: "новостное радио",
+    artist: "Новости",
     audio: "https://fed.fmplay.ru:8000/kpravda-32.aac",
     id: 1,
   },
@@ -19,7 +19,7 @@ let songs = [
     name: "Звезда",
     cover:
       "./img/zvezda.webp",
-    artist: "",
+    artist: "Военное радио, новости",
     audio: "https://fed.fmplay.ru:8000/zvezda-32.aac",
     id: 2,
   },
@@ -27,7 +27,7 @@ let songs = [
     name: "Маяк",
     cover:
       "./img/mayak.webp",
-    artist: "",
+    artist: "Новости, разговорное",
     audio: "https://fed.fmplay.ru:8000/mayak-32.aac",
     id: 3,
   },
@@ -65,6 +65,25 @@ let songs = [
     audio: "https://pub0102.101.ru:8443/stream/personal/aacp/64/1781512?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJrZXkiOiIwNjBhYzBkMDMzZDExZjg0NTFhM2NiNjlmOTA1NTlkYyIsIklQIjoiMTg4LjE2Mi4xNDIuMTk4IiwiVUEiOiJNb3ppbGxhXC81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXRcLzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZVwvMTAzLjAuMC4wIFNhZmFyaVwvNTM3LjM2IiwiUmVmIjoiaHR0cHM6XC9cLzEwMS5ydVwvIiwidWlkX2NoYW5uZWwiOiIxNzgxNTEyIiwidHlwZV9jaGFubmVsIjoicGVyc29uYWwiLCJ0eXBlRGV2aWNlIjoiUEMiLCJCcm93c2VyIjoiQ2hyb21lIiwiQnJvd3NlclZlcnNpb24iOiIxMDMuMC4wLjAiLCJTeXN0ZW0iOiJXaW5kb3dzIDEwIiwiZXhwIjoxNjU3NTg0Mzg3fQ.BeKQXembGRdmwlOYGJyWyZJnKDgjqU7LHt6gVHtcaMo#.mp3",
     id: 7,
   },
+
+
+
+
+
+{
+    name: "АвтоРадио",
+    cover:
+      "./img/avtoradio.webp",
+    artist: "Сочи 101.1 FM",
+    audio: "https://pub0101.101.ru:8443/stream/air/mp3/256/100",
+    id: 8,
+  },
+
+
+
+
+
+
 
 
 ];
