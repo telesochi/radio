@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+#PS {display: none;}
 
 .fa {
 color: #d5eebb;
@@ -25,7 +25,7 @@ body{
   cursor: pointer;
 background-color: #4e664f;
   border: none;
-  color: white;
+  color: #afc29b;
   padding: 0px 0px;
   text-align: center;
   text-decoration: none;
@@ -59,6 +59,28 @@ display: none !important;
 }
 audio::-webkit-media-controls-volume-control-container{
 display: none !important;
+}
+
+img.rot {
+  animation: 3s linear 0s normal none infinite running rot;
+  -webkit-animation: 3s linear 0s normal none infinite running rot;
+  width: 50px;
+}
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 

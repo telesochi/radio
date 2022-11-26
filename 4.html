@@ -1,13 +1,22 @@
 <html>
 <head>
-<link rel="stylesheet" href="style-menu.css">
+<link rel="stylesheet" href="css/style-menu.css">
 <link rel="stylesheet" href="css/style.css">
-<script src="icecast-metadata-player-1.13.1.min.js"></script>
-<style>#PS {display: none;}</style>    
+<script src="js/icecast-metadata-player-1.13.1.min.js"></script>
+   
 </head>
 
 <body>
-
+<script>
+      const onMetadata = (metadata) => {
+        document.getElementById("metadata").innerHTML = metadata.StreamTitle;
+      };
+      const player = 
+        new IcecastMetadataPlayer(
+          "https://ruby.torontocast.com:1360/stream", // stream endpoint
+          { onMetadata }                        // options (onMetadata callback)
+        );
+</script>
 
 
    
@@ -18,53 +27,32 @@
     <span></span>
     <span></span>
     <ul id="menu">
-      <a href="1.html"><li>Вести ФМ</li></a>
-      <a href="2.html"><li>Комсомольская правда</li></a>
-      <a href="3.html"><li>Маяк</li></a>
-      <a href="4.html"><li>Радио России</li></a>
-      <a href="5.html"><li>Культура</li></a>
-      <a href="6.html"><li>Sputnik</li></a>
-      <a href="7.html"><li>RT</li></a>
-<a href="index.html"><li>RMI New Generation</li></a>
-<a href="index2.html"><li>Italo Disco Fantasy</li></a>
+<li>RADIO MAXITALO</li>
+      <a href="index.html"><li>Italo Disco Classic</li></a>
+      <a href="2.html"><li>Italo Disco New Generation</li></a>
+      <a href="3.html"><li>Euro Disco</li></a>
+      <a href="4.html"><li>In The Mix</li></a>
+      <a href="5.html"><li>Synthesizer Dance</li></a>
+      <a href="6.html"><li>80S Gold</li></a>
+
     </ul>
   </div>
 </nav>
 
 
-<audio id="player" src="https://italo.italo.nu/fantasy"></audio>
+<p align="center"><b>In The Mix</b><br>&nbsp;<br><wew id="metadata">...</wew>
+<br>&nbsp;<br>
 
 
-<style>
-.outer:before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-}
+      <button class="button" id="PL" onclick="player.play(); document.getElementById('PL').style.display = 'none';  document.getElementById('PS').style.display = 'block';"><img src="img/play.png" height="50"></button>
+      <button class="button" id="PS" onclick="player.stop(); document.getElementById('PS').style.display = 'none'; document.getElementById('PL').style.display = 'block';"><img src="img/pause.png" height="50" class="rot"></button>
+<br>&nbsp;<br>&nbsp;<br>
 
-.inner {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: -0.35em;
-}
 
-.outer {
-  text-align: center;
-}
-</style>
 
-<div class="outer" style="height:100%; width: 100%; border:0px solid black">
-<span class="inner" style="border:0px solid red">
 
-  <p align="center">Радио России<br>&nbsp;<br>
-
-<button id="PL" class="button" onclick="document.getElementById('player').play(); document.getElementById('PL').style.display = 'none';  document.getElementById('PS').style.display = 'block';"><img src="play.png" height="50"></button>
-
-<button id="PS" class="button" onclick="document.getElementById('player').pause(); document.getElementById('PS').style.display = 'none'; document.getElementById('PL').style.display = 'block';"><img src="pause.png" height="50"></button>
-  </p>
-
-</span>
-</div>
+<!--
+<i class="fa fa-1.5x fa-play-circle"></i>
+-->
 </body>
 </html>
