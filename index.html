@@ -1,58 +1,264 @@
-<html>
-<head>
-<link rel="stylesheet" href="css/style-menu.css">
-<link rel="stylesheet" href="css/style.css">
-<script src="js/icecast-metadata-player-1.13.1.min.js"></script>
-   
-</head>
-
-<body>
-<script>
-      const onMetadata = (metadata) => {
-        document.getElementById("metadata").innerHTML = metadata.StreamTitle;
-      };
-      const player = 
-        new IcecastMetadataPlayer(
-          "https://ruby.torontocast.com:1380/stream", // stream endpoint
-          { onMetadata }                        // options (onMetadata callback)
-        );
-</script>
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
 
 
-   
-<nav role='navigation'>
-  <div id="menuToggle">
-    <input type="checkbox" />
-    <span></span>
-    <span></span>
-    <span></span>
-    <ul id="menu">
-<li>RADIO MAXITALO</li>
-      <a href="index.html"><li>Italo Disco Classic</li></a>
-      <a href="2.html"><li>Italo Disco New Generation</li></a>
-      <a href="3.html"><li>Euro Disco</li></a>
-      <a href="4.html"><li>In The Mix</li></a>
-      <a href="5.html"><li>Synthesizer Dance</li></a>
-      <a href="6.html"><li>80S Gold</li></a>
+    <script src="https://kit.fontawesome.com/4074b6dd70.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/style.css" />
 
-    </ul>
-  </div>
-</nav>
+    <title>ГлавРадио</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="connect-popup">
+        <div class="alert-message popup-section">
+          <i class="fas fa-list"></i>
+          <div></div>
+        </div>
+        <div class="signup-form popup-section">
+          <i class="fas fa-times"></i>
+          <h3>инфо</h3>
+          <form action="">
+            <div>
+              <label for="">Email:</label>
+              <input type="email" id="signup-email" required />
+            </div>
+            <div>
+              <label for="signup-password">Password:</label>
+              <input type="password" id="signup-password" required />
+            </div>
+            <div>
+              <a href="#" id="login-link">or Log in</a>
+              <button type="submit">Sign up</button>
+            </div>
+          </form>
+        </div>
+        <div class="login-form popup-section">
+          <i class="fa fa-times"></i>
+          <h3>Log In</h3>
+          <form action="">
+            <div>
+              <label for="">Email:</label>
+              <input type="email" id="login-email" required />
+            </div>
+            <div>
+              <label for="signup-password">Password:</label>
+              <input type="password" id="login-password" required />
+            </div>
+            <div>
+              <a href="#" id="signup-link">or Sign up</a>
+              <button type="submit">Log in</button>
+            </div>
+          </form>
+        </div>
+        <div class="logout-form popup-section">
+          <i class="fas fa-times"></i>
+
+          <form action="">
+            <i class="fas fa-times"></i>
+            <button type="submit">Log out</button>
+          </form>
+        </div>
+        <div class="add-song-form popup-section">
+          <i class="fas fa-times"></i>
+
+          
+<!--Содержимое формы-->
+<p>.</p>
+<p align="justify">
+Это маленькое, приложение для прослушивания онлайн радио и музыки, сделано в рамках моего обучения CSS и JavaScript технологиям.
+</p>
+
+<p align="justify">
+Приложение содержит мои эксперименты и любимые мной ссылки на аудио/видео потоки взятые из открытых источников в сети интернет и только проигрывает их посредством JS.
+</p>
+
+<p align="justify">
+Вы можете скачать приложение для android OS, установить его на телефон, планшет, автомагнитолу или домашний медиаплеер. Теперь ГлавРадио будет всегда в паре кликов от вас!
+</p>
+<p><a href="./app/ГлавРадио.apk">Скачать ГлавРадио</a></p>
+
+<p><a href="https://qiwi.com/n/DENNISDEAF">Автору на пиво<a></a>
+
+<p align="center">Связаться со мной всегда можно: <a href="https://t.me/denisdeaf">@denisdeaf</a></p>
 
 
-<p align="center"><b>Italo Disco Classic</b><br>&nbsp;<br><load id="metadata">...</load>
-<br>&nbsp;<br>
+<p align="right"> - Denis Deaf.</p>     
+
+<!--/Содержимое формы-->
+
+        </div>
+      </div>
+      <nav>
+        <span id="connect-link">ГлавРадио</span>
+        <span id="library-link"><i class="fas fa-list"></i></span>
+      </nav>
+      <div class="song-info">
+        <img
+          src="./img/vesti.webp"
+          alt="" 
+        />
+        <div>
+          <h2>Вести ФМ</h2>
+          <h3>Первое новостное радио</h3>
+        </div>
+      </div>
+      <div class="player">
+        <div>
+          <input type="range" />
+          <div></div>
+        </div>
+        <span>start</span>
+        <span>online</span>
+      </div>
+      <div class="player-control">
+        <i class="fas fa-backward" id="backward"></i>
+        <i class="fas fa-play" id="play-pause"></i>
+        <i class="fas fa-forward" id="forward"></i>
+      </div>
+      <div class="sound-control">
+        <i class="fas fa-volume-down"></i>
+        <input type="range" max="100" step="1" />
+        <i class="fas fa-volume-up"></i>
+      </div>
+      <audio src="https://icecast-vgtrk.cdnvideo.ru/vestifm_aac_32kbps"></audio>
+    </div>
+    <div class="library">
+ 
+
+      <div class="library-song selected" id="0">
+        <img style="width:60px;"
+          src="./img/vesti.webp"
+          alt="" class="round" width="100"
+        />
+        <div class="library-song-info">
+          <h3>Вести ФМ</h3>
+          <h4>Первое новостное радио</h4>
+        </div>
+      </div>
 
 
-      <button class="button" id="PL" onclick="player.play(); document.getElementById('PL').style.display = 'none';  document.getElementById('PS').style.display = 'block';"><img src="img/play.png" height="50"></button>
-      <button class="button" id="PS" onclick="player.stop(); document.getElementById('PS').style.display = 'none'; document.getElementById('PL').style.display = 'block';"><img src="img/pause.png" height="50" class="rot"></button>
-<br>&nbsp;<br>&nbsp;<br>
+
+
+
+      <div class="library-song" id="1">
+        <img style="width:60px;"
+          src="./img/kpravda.webp"
+          alt="" class="round" 
+        />
+        <div class="library-song-info">
+          <h3>Комсомольская правда</h3>
+          <h4>Новости</h4>
+        </div>
+      </div>
 
 
 
 
-<!--
-<i class="fa fa-1.5x fa-play-circle"></i>
--->
-</body>
+      <div class="library-song" id="2">
+       <img style="width:60px;"
+          src="./img/zvezda.webp"
+          alt="" class="round" 
+        />
+        <div class="library-song-info">
+          <h3>Звезда</h3>
+          <h4>Военное радио, новости</h4>
+        </div>
+      </div>
+
+
+
+
+      <div class="library-song" id="3">
+        <img style="width:60px;"
+          src="./img/mayak.webp"
+          alt="" class="round" 
+        />
+        <div class="library-song-info">
+          <h3>Маяк</h3>
+          <h4>Новости, разговорное</h4>
+        </div>
+      </div>
+
+
+
+      <div class="library-song" id="4">
+        <img style="width:60px;"
+          src="./img/sputnik.webp"
+          alt="" class="round"
+        />
+        <div class="library-song-info">
+          <h3>Sputnik</h3>
+          <h4>Новости, разговорное</h4>
+        </div>
+      </div>
+
+
+
+      <div class="library-song" id="5">
+        <img style="width:60px;"
+          src="./img/marusa.png"
+          alt="" class="round" 
+        />
+        <div class="library-song-info">
+          <h3>Маруся ФМ</h3>
+          <h4>Поп музыка</h4>
+        </div>
+      </div>
+
+
+
+<div class="library-song" id="6">
+        <img style="width:60px;"
+          src="./img/newwave.jpg"
+          alt="" class="round" 
+        />
+        <div class="library-song-info">
+          <h3>New Wave</h3>
+          <h4></h4>
+        </div>
+      </div>
+
+<div class="library-song" id="7">
+        <img style="width:60px;"
+          src="./img/dennis.jpg"
+          alt="" class="round" 
+        />
+        <div class="library-song-info">
+          <h3>Best Disco 80S</h3>
+          <h4>denis.101.ru</h4>
+        </div>
+      </div>
+
+<div class="library-song" id="8">
+        <img style="width:60px;"
+          src="./img/avtoradio.webp"
+          alt="" class="round" 
+        />
+        <div class="library-song-info">
+          <h3>АвтоРадио</h3>
+          <h4>Сочи 101.1 FM</h4>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class="add-song">Информация</div>
+    </div>
+    
+    <script src="./scripts/songs.js"></script>
+    <script src="./scripts/app.js"></script>
+    <script src="./scripts/auth.js"></script>
+    <script src="./scripts/storage.js"></script>
+  </body>
 </html>
