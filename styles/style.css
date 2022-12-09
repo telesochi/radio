@@ -240,7 +240,7 @@ nav .library-opened-link {
 }
 
 .sound-control {
-  min-height: 15vh;
+  min-height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -280,7 +280,7 @@ nav .library-opened-link {
 }
 
 .sound-control i {
-  color: black;
+  color: #adcaf2;
 }
 
 .library {

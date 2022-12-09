@@ -40,20 +40,20 @@ let songs = [
     id: 4,
   },
   {
-    name: "Маруся ФМ",
+    name: "Радио России",
     cover:
-      "./img/marusa.png",
-    artist: "Поп музыка",
-    audio: "https://radio-holding.ru:9433/marusya_default",
+      "./img/radio-russia.webp",
+    artist: "Новости, разговорное",
+    audio: "https://icecast-vgtrk.cdnvideo.ru/rrzonam",
     id: 5,
   },
 
  {
-    name: "New Wave",
+    name: "Ретро ФМ",
     cover:
-      "./img/newwave.jpg",
-    artist: "Диско 80х",
-    audio: "https://digitalaudiobroadcasting.net/8004/stream",
+      "./img/retrofm.webp",
+    artist: "Музыкальное",
+    audio: "https://fed.fmplay.ru:8000/retro-32.aac",
     id: 6,
   },
 
@@ -81,7 +81,14 @@ let songs = [
 
 
 
-
+{
+    name: "Макс FM",
+    cover:
+      "./img/maxfm.webp",
+    artist: "Сочинское радио",
+    audio: "https://maksfm.hostingradio.ru/maksfm320.mp3",
+    id: 9,
+  },
 
 
 
