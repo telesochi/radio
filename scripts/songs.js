@@ -35,7 +35,7 @@ let songs = [
     name: "Sputnik",
     cover:
       "./img/sputnik.webp",
-    artist: "",
+    artist: "Новости, разговорное",
     audio: "https://fed.fmplay.ru:8000/sputnik-32.aac",
     id: 4,
   },
@@ -92,6 +92,23 @@ let songs = [
 
 
 
+{
+    name: "СоловьёвFM",
+    cover:
+      "./img/solovey.jpg",
+    artist: "В прямом эфире Соловьёв FM – новости и размышления, прямые включения корреспондентов, обсуждение повестки с признанными экспертами из разных областей.",
+    audio: "https://solovievfm.hostingradio.ru/solovievfm128.aacp",
+    id: 10,
+  },
+
+{
+    name: "Radio/LA",
+    cover:
+      "./img/radiola.png",
+    artist: "Культовые хиты рубежа 90х-00х",
+    audio: "https://radiola.hostingradio.ru/radiola_srt_64.aac",
+    id: 11,
+  },
 
 ];
 storageRef
