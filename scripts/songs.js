@@ -96,7 +96,7 @@ let songs = [
     name: "СоловьёвFM",
     cover:
       "./img/solovey.jpg",
-    artist: "В прямом эфире Соловьёв FM – новости и размышления, прямые включения корреспондентов, обсуждение повестки с признанными экспертами из разных областей.",
+    artist: "Новости, разговорное",
     audio: "https://solovievfm.hostingradio.ru/solovievfm128.aacp",
     id: 10,
   },
@@ -121,28 +121,28 @@ storageRef
 
 storageRef
   .child("default")
-  .child("https://italo.italo.nu/fantasy")
+  .child("")
   .getDownloadURL()
   .then((url) => {
     songs[1].audio = url;
   });
 storageRef
   .child("default")
-  .child("https://italo.italo.nu/fantasy#.mp3")
+  .child("")
   .getDownloadURL()
   .then((url) => {
     songs[2].audio = url;
   });
 storageRef
   .child("default")
-  .child("https://italo.italo.nu/fantasy#.mp3")
+  .child("")
   .getDownloadURL()
   .then((url) => {
     songs[3].audio = url;
   });
 storageRef
   .child("default")
-  .child("quran4.mp3")
+  .child("")
   .getDownloadURL()
   .then((url) => {
     songs[4].audio = url;
@@ -150,7 +150,64 @@ storageRef
 storageRef
   .child("default")
   .child("")
-  .getDownloadURL("https://italo.italo.nu/fantasy")
+  .getDownloadURL()
   .then((url) => {
     songs[5].audio = url;
   });
+storageRef
+  .child("default")
+  .child("")
+  .getDownloadURL()
+  .then((url) => {
+    songs[6].audio = url;
+  });
+
+storageRef
+  .child("default")
+  .child("")
+  .getDownloadURL()
+  .then((url) => {
+    songs[7].audio = url;
+  });
+
+storageRef
+  .child("default")
+  .child("")
+  .getDownloadURL()
+  .then((url) => {
+    songs[8].audio = url;
+  });
+storageRef
+  .child("default")
+  .child("")
+  .getDownloadURL()
+  .then((url) => {
+    songs[9].audio = url;
+  });
+storageRef
+  .child("default")
+  .child("")
+  .getDownloadURL()
+  .then((url) => {
+    songs[10].audio = url;
+  });
+storageRef
+  .child("default")
+  .child("")
+  .getDownloadURL()
+  .then((url) => {
+    songs[11].audio = url;
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
