@@ -1,314 +1,1317 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="ГлавРадио - онлайн радио из России слушать онлайн" />
-        <meta name="author" content="Денис Глухой" />
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>ГЕНЕРАТОР ШУМА</title>
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+<!-- jPlayer -->
+<script type="text/javascript" src="js/context.js" async=""></script>
+<script type="text/javascript" src="js/context.js" async=""></script>
+<script type="text/javascript" src="js/context.js" async=""></script>
+<script type="text/javascript" src="js/context.js" async=""></script>
+
+
+<script src="https://cdn.jsdelivr.net/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jplayer/2.9.2/jquery.jplayer.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+
+
+    
+<script>
+//<![CDATA[
+$(document).ready(function(){
+
+	$("#jquery_jplayer_1").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Шум моря",
+				mp3: "https://str1.pcradio.ru/sea_song-hi"
+			});
+		},
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_1",
+		loop: true
+	});
+		
+	$(".jp-volume-bar1").slider({	
+        orientation: "horizontal",
+		value: 80,
+		slide: function( event, ui ) {
+		    var volume = ui.value / 100;
+		    $("#jquery_jplayer_1").jPlayer("volume", volume);
+		}
+    });
+	
+<!---------------------------->	
+
+	$("#jquery_jplayer_2").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Звуки леса",
+				mp3: "sound/forest.mp3"
+			});
+		},
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_2",
+		loop: true
+	});
+	
+	$(".jp-volume-bar2").slider({	
+        orientation: "horizontal",
+		value: 50,
+		slide: function( event, ui ) {
+		    var volume = ui.value / 100;
+		    $("#jquery_jplayer_2").jPlayer("volume", volume);
+		}
+    });
+
+<!---------------------------->		
+
+	$("#jquery_jplayer_3").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Шум ветра",
+				mp3: "sound/wind.mp3"
+			});
+		},
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_3",
+		loop: true
+	});
+	
+	$(".jp-volume-bar3").slider({	
+        orientation: "horizontal",
+		value: 80,
+		slide: function( event, ui ) {
+		    var volume = ui.value / 100;
+		    $("#jquery_jplayer_3").jPlayer("volume", volume);
+		}
+    });
+	
+<!---------------------------->		
+	
+	$("#jquery_jplayer_4").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Белый шум",
+				mp3: "https://uk1.internet-radio.com/proxy/whitenoise?mp=/stream;"
+			});
+		},
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_4",
+		loop: true
+	});
+
+	$(".jp-volume-bar4").slider({	
+        orientation: "horizontal",
+		value: 80,
+		slide: function( event, ui ) {
+		    var volume = ui.value / 100;
+		    $("#jquery_jplayer_4").jPlayer("volume", volume);
+		}
+    });
+
+<!---------------------------->		
+	
+	$("#jquery_jplayer_5").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Библиотека",
+				mp3: "sound/song.mp3"
+			});
+		},
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_5",
+		loop: true
+	});
+
+	$(".jp-volume-bar5").slider({	
+        orientation: "horizontal",
+		value: 80,
+		slide: function( event, ui ) {
+		    var volume = ui.value / 100;
+		    $("#jquery_jplayer_5").jPlayer("volume", volume);
+		}
+    });
+
+<!---------------------------->		
+	
+	$("#jquery_jplayer_6").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Шум поезда",
+				mp3: "sound/poezd.mp3"
+			});
+		},
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_6",
+		loop: true
+	});
+
+	$(".jp-volume-bar6").slider({	
+        orientation: "horizontal",
+		value: 80,
+		slide: function( event, ui ) {
+		    var volume = ui.value / 100;
+		    $("#jquery_jplayer_6").jPlayer("volume", volume);
+		}
+    });
+
+<!---------------------------->	
+	
+	$("#jquery_jplayer_7").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Шум реки",
+				mp3: "sound/river.mp3"
+			});
+		},
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_7",
+		loop: true
+	});	
+
+	$(".jp-volume-bar7").slider({	
+        orientation: "horizontal",
+		value: 80,
+		slide: function( event, ui ) {
+		    var volume = ui.value / 100;
+		    $("#jquery_jplayer_7").jPlayer("volume", volume);
+		}
+    });
+
+<!---------------------------->	
+	
+	$("#jquery_jplayer_8").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Звук костра",
+				mp3: "sound/bonfire.mp3"
+			});
+		},
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_8",
+		loop: true
+	});
+
+	$(".jp-volume-bar8").slider({	
+        orientation: "horizontal",
+		value: 80,
+		slide: function( event, ui ) {
+		    var volume = ui.value / 100;
+		    $("#jquery_jplayer_8").jPlayer("volume", volume);
+		}
+    });
+
+<!---------------------------->	
+	
+	$("#jquery_jplayer_9").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Ночь",
+				mp3: "sound/night.mp3"
+			});
+		},
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_9",
+		loop: true
+	});
+
+	$(".jp-volume-bar9").slider({	
+        orientation: "horizontal",
+		value: 80,
+		slide: function( event, ui ) {
+		    var volume = ui.value / 100;
+		    $("#jquery_jplayer_9").jPlayer("volume", volume);
+		}
+    });
+	
+<!---------------------------->		
+	
+	$("#jquery_jplayer_10").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Звуки дельфинов",
+				mp3: "sound/dolphin.mp3"
+			});
+		},
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_10",
+		loop: true
+	});
+
+	$(".jp-volume-bar10").slider({	
+        orientation: "horizontal",
+		value: 80,
+		slide: function( event, ui ) {
+		    var volume = ui.value / 100;
+		    $("#jquery_jplayer_10").jPlayer("volume", volume);
+		}
+    });	
+	
+<!---------------------------->	
+					
+	$("#jquery_jplayer_11").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Шум дороги",
+				mp3: "sound/doroga.mp3"
+			});
+		},
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_11",
+		loop: true
+	});	
+	
+	$(".jp-volume-bar11").slider({	
+        orientation: "horizontal",
+		value: 80,
+		slide: function( event, ui ) {
+		    var volume = ui.value / 100;
+		    $("#jquery_jplayer_11").jPlayer("volume", volume);
+		}
+    });
+
+<!---------------------------->	
+	
+	$("#jquery_jplayer_12").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Вентилятор",
+				mp3: "sound/kater.mp3"
+			});
+		},
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_12",
+		loop: true
+	});	
+	
+	$(".jp-volume-bar12").slider({	
+        orientation: "horizontal",
+		value: 80,
+		slide: function( event, ui ) {
+		    var volume = ui.value / 100;
+		    $("#jquery_jplayer_12").jPlayer("volume", volume);
+		}
+    });
+
+<!---------------------------->	
+		
+	$("#jquery_jplayer_13").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Шум дождя",
+				mp3: "https://str1.pcradio.ru/rad_ntrrdrn-hi"
+			});
+		},
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_13",
+		loop: true
+	});	
+
+	$(".jp-volume-bar13").slider({	
+        orientation: "horizontal",
+		value: 80,
+		slide: function( event, ui ) {
+		    var volume = ui.value / 100;
+		    $("#jquery_jplayer_13").jPlayer("volume", volume);
+		}
+    });
+	
+<!---------------------------->		
+	
+	$("#jquery_jplayer_14").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Звук грома",
+				mp3: "sound/grom.mp3"
+			});
+		},
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_14",
+		loop: true
+	});
+
+	$(".jp-volume-bar14").slider({	
+        orientation: "horizontal",
+		value: 80,
+		slide: function( event, ui ) {
+		    var volume = ui.value / 100;
+		    $("#jquery_jplayer_14").jPlayer("volume", volume);
+		}
+    });
+
+<!---------------------------->	
+	
+	$("#jquery_jplayer_15").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Шаги по снегу",
+				mp3: "sound/snow.mp3"
+			});
+		},
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_15",
+		loop: true
+	});
+
+	$(".jp-volume-bar15").slider({	
+        orientation: "horizontal",
+		value: 80,
+		slide: function( event, ui ) {
+		    var volume = ui.value / 100;
+		    $("#jquery_jplayer_15").jPlayer("volume", volume);
+		}
+    });
+
+	
+<!---------------------------->		
+	
+	$("#jquery_jplayer_16").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Колокольчики",
+				mp3: "sound/kolokol.mp3"
+			});
+		},
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_16",
+		loop: true
+	});
+
+	$(".jp-volume-bar16").slider({	
+        orientation: "horizontal",
+		value: 80,
+		slide: function( event, ui ) {
+		    var volume = ui.value / 100;
+		    $("#jquery_jplayer_16").jPlayer("volume", volume);
+		}
+    });
+	
+<!---------------------------->		
+	
+	$("#jquery_jplayer_17").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Звуки в кафе",
+				mp3: "sound/cafe.mp3"
+			});
+		},
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_17",
+		loop: true
+	});
+
+	$(".jp-volume-bar17").slider({	
+        orientation: "horizontal",
+		value: 80,
+		slide: function( event, ui ) {
+		    var volume = ui.value / 100;
+		    $("#jquery_jplayer_17").jPlayer("volume", volume);
+		}
+    });
+
+
+<!---------------------------->		
+	
+	$("#jquery_jplayer_18").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Звуки села",
+				mp3: "sound/village.mp3"
+			});
+		},
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_18",
+		loop: true
+	});
+
+	$(".jp-volume-bar18").slider({	
+        orientation: "horizontal",
+		value: 80,
+		slide: function( event, ui ) {
+		    var volume = ui.value / 100;
+		    $("#jquery_jplayer_18").jPlayer("volume", volume);
+		}
+    });
+
+<!---------------------------->		
+	
+	$("#jquery_jplayer_19").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Пение птиц",
+				mp3: "https://str1.pcradio.ru/song_bird-med"
+			});
+		},
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_19",
+		loop: true
+	});
+
+	$(".jp-volume-bar19").slider({	
+        orientation: "horizontal",
+		value: 80,
+		slide: function( event, ui ) {
+		    var volume = ui.value / 100;
+		    $("#jquery_jplayer_19").jPlayer("volume", volume);
+		}
+    });
+
+<!---------------------------->		
+	
+	$("#jquery_jplayer_20").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Шум листьев",
+				mp3: "sound/leaves.mp3"
+			});
+		},
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_20",
+		loop: true
+	});
+	
+	$(".jp-volume-bar20").slider({	
+        orientation: "horizontal",
+		value: 80,
+		slide: function( event, ui ) {
+		    var volume = ui.value / 100;
+		    $("#jquery_jplayer_20").jPlayer("volume", volume);
+		}
+    });
+
+<!---------------------------->		
+	
+	$("#jquery_jplayer_21").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Розовый шум",
+				mp3: "https://uk1.internet-radio.com/proxy/pinknoise?mp=/stream;"
+			});
+		},
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_21",
+		loop: true
+	});
+	
+	$(".jp-volume-bar21").slider({	
+        orientation: "horizontal",
+		value: 80,
+		slide: function( event, ui ) {
+		    var volume = ui.value / 100;
+		    $("#jquery_jplayer_21").jPlayer("volume", volume);
+		}
+    });
+
+<!---------------------------->	
+	
+	$("#jquery_jplayer_22").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Дятел",
+				mp3: "sound/dyatel.mp3"
+			});
+		},
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_22",
+		loop: true
+	});
+	
+	$(".jp-volume-bar22").slider({	
+        orientation: "horizontal",
+		value: 80,
+		slide: function( event, ui ) {
+		    var volume = ui.value / 100;
+		    $("#jquery_jplayer_22").jPlayer("volume", volume);
+		}
+    });
+
+<!---------------------------->	
+	
+	$("#jquery_jplayer_23").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Биение сердца",
+				mp3: "sound/heart.mp3"
+			});
+		},
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_23",
+		loop: true
+	});
+	
+	$(".jp-volume-bar23").slider({	
+        orientation: "horizontal",
+		value: 80,
+		slide: function( event, ui ) {
+		    var volume = ui.value / 100;
+		    $("#jquery_jplayer_23").jPlayer("volume", volume);
+		}
+    });
+
+<!---------------------------->	
+	
+	$("#jquery_jplayer_24").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Капли воды",
+				mp3: "sound/kapli.mp3"
+			});
+		},
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_24",
+		loop: true
+	});
+	
+	$(".jp-volume-bar24").slider({	
+        orientation: "horizontal",
+		value: 80,
+		slide: function( event, ui ) {
+		    var volume = ui.value / 100;
+		    $("#jquery_jplayer_24").jPlayer("volume", volume);
+		}
+    });
+
+
+<!---------------------------->	
+	
+	$("#jquery_jplayer_25").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Кваканье лягушек",
+				mp3: "sound/frog.mp3"
+			});
+		},
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_25",
+		loop: true
+	});
+	
+	$(".jp-volume-bar25").slider({	
+        orientation: "horizontal",
+		value: 80,
+		slide: function( event, ui ) {
+		    var volume = ui.value / 100;
+		    $("#jquery_jplayer_25").jPlayer("volume", volume);
+		}
+    });
+
+<!---------------------------->	
+	
+	$("#jquery_jplayer_26").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Жужжание пчел",
+				mp3: "sound/bee.mp3"
+			});
+		},
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_26",
+		loop: true
+	});
+	
+	$(".jp-volume-bar26").slider({	
+        orientation: "horizontal",
+		value: 80,
+		slide: function( event, ui ) {
+		    var volume = ui.value / 100;
+		    $("#jquery_jplayer_26").jPlayer("volume", volume);
+		}
+    });
+
+<!---------------------------->	
+
+	
+	$("#jquery_jplayer_27").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Водопад",
+				mp3: "sound/waterfall.mp3"
+			});
+		},
+		preload: "none",
+		supplied: "mp3",
+		cssSelectorAncestor: "#jp_container_27",
+		loop: true
+	});
+	
+	$(".jp-volume-bar27").slider({	
+        orientation: "horizontal",
+		value: 80,
+		slide: function( event, ui ) {
+		    var volume = ui.value / 100;
+		    $("#jquery_jplayer_27").jPlayer("volume", volume);
+		}
+    });
+
+	
+$("#stop_all").click(function(){
+	setTimeout(function(){
+	$(".jp-pause").trigger("click")},3600000); // write the time after you want to stop 1000 = 1 second //
+});
+
+
+});
+
+</script>
+
+
+</head>
+<body class="background">
+<div id="jquery_jplayer_1" class="jp-jplayer" style="width: 0px; height: 0px;"><img id="jp_poster_0" style="width: 0px; height: 0px; display: none;"><audio id="jp_audio_0" preload="none" src="sound/sea.mp3" title="Шум моря"></audio></div>
+
+<div id="jquery_jplayer_2" class="jp-jplayer" style="width: 0px; height: 0px;"><img id="jp_poster_1" style="width: 0px; height: 0px; display: none;"><audio id="jp_audio_1" preload="none" src="sound/sea.mp3" title="Звуки леса"></audio></div>
+<div id="jquery_jplayer_3" class="jp-jplayer" style="width: 0px; height: 0px;"><img id="jp_poster_2" style="width: 0px; height: 0px; display: none;"><audio id="jp_audio_2" preload="none" src="sound/wind.mp3" title="Шум ветра"></audio></div>
+<div id="jquery_jplayer_4" class="jp-jplayer" style="width: 0px; height: 0px;"><img id="jp_poster_3" style="width: 0px; height: 0px; display: none;"><audio id="jp_audio_3" preload="none" src="sound/white.mp3" title="Белый шум"></audio></div>
+<div id="jquery_jplayer_5" class="jp-jplayer" style="width: 0px; height: 0px;"><img id="jp_poster_4" style="width: 0px; height: 0px; display: none;"><audio id="jp_audio_4" preload="none" src="sound/song.mp3" title="Библиотека"></audio></div>
+<div id="jquery_jplayer_6" class="jp-jplayer" style="width: 0px; height: 0px;"><img id="jp_poster_5" style="width: 0px; height: 0px; display: none;"><audio id="jp_audio_5" preload="none" src="sound/poezd.mp3" title="Шум поезда"></audio></div>
+<div id="jquery_jplayer_7" class="jp-jplayer" style="width: 0px; height: 0px;"><img id="jp_poster_6" style="width: 0px; height: 0px; display: none;"><audio id="jp_audio_6" preload="none" src="sound/river.mp3" title="Шум реки"></audio></div>
+<div id="jquery_jplayer_8" class="jp-jplayer" style="width: 0px; height: 0px;"><img id="jp_poster_7" style="width: 0px; height: 0px; display: none;"><audio id="jp_audio_7" preload="none" src="sound/bonfire.mp3" title="Звук костра"></audio></div>
+<div id="jquery_jplayer_9" class="jp-jplayer" style="width: 0px; height: 0px;"><img id="jp_poster_8" style="width: 0px; height: 0px; display: none;"><audio id="jp_audio_8" preload="none" src="sound/night.mp3" title="Ночь"></audio></div>
+<div id="jquery_jplayer_10" class="jp-jplayer" style="width: 0px; height: 0px;"><img id="jp_poster_9" style="width: 0px; height: 0px; display: none;"><audio id="jp_audio_9" preload="none" src="sound/dolphin.mp3" title="Звуки дельфинов"></audio></div>
+<div id="jquery_jplayer_11" class="jp-jplayer" style="width: 0px; height: 0px;"><img id="jp_poster_10" style="width: 0px; height: 0px; display: none;"><audio id="jp_audio_10" preload="none" src="sound/doroga.mp3" title="Шум дороги"></audio></div>
+<div id="jquery_jplayer_12" class="jp-jplayer" style="width: 0px; height: 0px;"><img id="jp_poster_11" style="width: 0px; height: 0px; display: none;"><audio id="jp_audio_11" preload="none" src="sound/kater.mp3" title="Вентилятор"></audio></div>
+<div id="jquery_jplayer_13" class="jp-jplayer" style="width: 0px; height: 0px;"><img id="jp_poster_12" style="width: 0px; height: 0px; display: none;"><audio id="jp_audio_12" preload="none" src="sound/rain.mp3" title="Шум дождя"></audio></div>
+<div id="jquery_jplayer_14" class="jp-jplayer" style="width: 0px; height: 0px;"><img id="jp_poster_13" style="width: 0px; height: 0px; display: none;"><audio id="jp_audio_13" preload="none" src="sound/grom.mp3" title="Звук грома"></audio></div>
+<div id="jquery_jplayer_15" class="jp-jplayer" style="width: 0px; height: 0px;"><img id="jp_poster_14" style="width: 0px; height: 0px; display: none;"><audio id="jp_audio_14" preload="none" src="sound/snow.mp3" title="Шаги по снегу"></audio></div>
+<div id="jquery_jplayer_16" class="jp-jplayer" style="width: 0px; height: 0px;"><img id="jp_poster_15" style="width: 0px; height: 0px; display: none;"><audio id="jp_audio_15" preload="none" src="sound/kolokol.mp3" title="Колокольчики"></audio></div>
+<div id="jquery_jplayer_17" class="jp-jplayer" style="width: 0px; height: 0px;"><img id="jp_poster_16" style="width: 0px; height: 0px; display: none;"><audio id="jp_audio_16" preload="none" src="sound/cafe.mp3" title="Звуки в кафе"></audio></div>
+<div id="jquery_jplayer_18" class="jp-jplayer" style="width: 0px; height: 0px;"><img id="jp_poster_17" style="width: 0px; height: 0px; display: none;"><audio id="jp_audio_17" preload="none" src="sound/village.mp3" title="Звуки села"></audio></div>
+<div id="jquery_jplayer_19" class="jp-jplayer" style="width: 0px; height: 0px;"><img id="jp_poster_18" style="width: 0px; height: 0px; display: none;"><audio id="jp_audio_18" preload="none" src="sound/kot.mp3" title="Пение птиц"></audio></div>
+<div id="jquery_jplayer_20" class="jp-jplayer" style="width: 0px; height: 0px;"><img id="jp_poster_19" style="width: 0px; height: 0px; display: none;"><audio id="jp_audio_19" preload="none" src="sound/leaves.mp3" title="Шум листьев"></audio></div>
+<div id="jquery_jplayer_21" class="jp-jplayer" style="width: 0px; height: 0px;"><img id="jp_poster_20" style="width: 0px; height: 0px; display: none;"><audio id="jp_audio_20" preload="none" src="sound/pink.mp3" title="Розовый шум"></audio></div>
+<div id="jquery_jplayer_22" class="jp-jplayer" style="width: 0px; height: 0px;"><img id="jp_poster_21" style="width: 0px; height: 0px; display: none;"><audio id="jp_audio_21" preload="none" src="sound/dyatel.mp3" title="Дятел"></audio></div>
+<div id="jquery_jplayer_23" class="jp-jplayer" style="width: 0px; height: 0px;"><img id="jp_poster_22" style="width: 0px; height: 0px; display: none;"><audio id="jp_audio_22" preload="none" src="sound/heart.mp3" title="Биение сердца"></audio></div>
+<div id="jquery_jplayer_24" class="jp-jplayer" style="width: 0px; height: 0px;"><img id="jp_poster_23" style="width: 0px; height: 0px; display: none;"><audio id="jp_audio_23" preload="none" src="sound/kapli.mp3" title="Капли воды"></audio></div>
+<div id="jquery_jplayer_25" class="jp-jplayer" style="width: 0px; height: 0px;"><img id="jp_poster_24" style="width: 0px; height: 0px; display: none;"><audio id="jp_audio_24" preload="none" src="sound/frog.mp3" title="Кваканье лягушек"></audio></div>
+<div id="jquery_jplayer_26" class="jp-jplayer" style="width: 0px; height: 0px;"><img id="jp_poster_25" style="width: 0px; height: 0px; display: none;"><audio id="jp_audio_25" preload="none" src="sound/bee.mp3" title="Жужжание пчел"></audio></div>
+<div id="jquery_jplayer_27" class="jp-jplayer" style="width: 0px; height: 0px;"><img id="jp_poster_26" style="width: 0px; height: 0px; display: none;"><audio id="jp_audio_26" preload="none" src="sound/waterfall.mp3" title="Водопад"></audio></div>
+
+  
 
 
 
 
+<script>window.setTimeout("document.getElementById('logos').style.display='none';", 25000); </script> <!-- 
+
+<!-->
+  <div class="container" style="display: table;">    
+     <div class="column1 mobhide"> </div>
+		
+     <h1>Генератор звуков</h1>
+     
+<div style="color: #f4f4f4;">
+Что такое белый шум : Что такое розовый шум
+</div>
+      
+      
 
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
+ 
 
 
-    <script src="https://kit.fontawesome.com/4074b6dd70.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./styles/style.css" />
+ 
+  
+<section id="home" class="container">
 
-    <title>ГлавРадио - онлайн радио из России слушать онлайн</title>
-  </head>
-  <body>
-    <div class="app">
-      <div class="connect-popup">
-        <div class="alert-message popup-section">
-          <i class="fas fa-list"></i>
-          <div></div>
-        </div>
-        <div class="signup-form popup-section">
-          <i class="fas fa-times"></i>
-          <h3>инфо</h3>
-          <form action="">
-            <div>
-              <label for="">Email:</label>
-              <input type="email" id="signup-email" required />
-            </div>
-            <div>
-              <label for="signup-password">Password:</label>
-              <input type="password" id="signup-password" required />
-            </div>
-            <div>
-              <a href="#" id="login-link">or Log in</a>
-              <button type="submit">Sign up</button>
-            </div>
-          </form>
-        </div>
-        <div class="login-form popup-section">
-          <i class="fa fa-times"></i>
-          <h3>Log In</h3>
-          <form action="">
-            <div>
-              <label for="">Email:</label>
-              <input type="email" id="login-email" required />
-            </div>
-            <div>
-              <label for="signup-password">Password:</label>
-              <input type="password" id="login-password" required />
-            </div>
-            <div>
-              <a href="#" id="signup-link">or Sign up</a>
-              <button type="submit">Log in</button>
-            </div>
-          </form>
-        </div>
-        <div class="logout-form popup-section">
-          <i class="fas fa-times"></i>
+    <div id="main">
+		
+<div id="content">		        
+	<div class="row">
+		
+	<div class="col-xs-6 col-sm-4">
+		<div id="jp_container_1" class="jp-state-looped jp-state-playing">				
 
-          <form action="">
-            <i class="fas fa-times"></i>
-            <button type="submit">Log out</button>
-          </form>
-        </div>
-        <div class="add-song-form popup-section">
-          <i class="fas fa-times"></i>
+				<a href="javascript:;" class="jp-play" id="shower1" style="display: none;"><img src="images/zvuk-morya.png" title="Шум моря" alt="звуки морских волн" class="img1"></a>
+        
+				<a href="javascript:;" class="jp-pause" id="hider1" style="display: inline;"><img src="images/zvuk-morya.png" title="Шум моря" alt="звуки морских волн" class="img2">
+            </a>
+            
+            <br><h4 style="font-size:15px;">Шум Моря</h4>
+				<div class="jp-volume-bar1 ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="visibility: visible;" id="slvolume1"><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 80%;"></span></div>
+		
+		</div>			
+	</div>	
 
-          
-<!--Содержимое формы-->
-<p>О приложении</p>
-<p align="justify">
-Это маленькое, приложение для прослушивания онлайн радио и музыки, сделано в рамках моего обучения CSS и JavaScript технологиям.
-</p>
+    <div class="col-xs-6 col-sm-4">
+		<div id="jp_container_7" class="jp-state-looped">				
 
-<p align="justify">
-Приложение содержит мои эксперименты и любимые мной ссылки на аудио/видео потоки взятые из открытых источников в сети интернет и только проигрывает их посредством JS.
-</p>
-
-<p align="justify">
-Вы можете скачать приложение для android OS, установить его на телефон, планшет, автомагнитолу или домашний медиаплеер. Теперь ГлавРадио будет всегда в паре кликов от вас!
-</p>
-<p><a href="./app/ГлавРадио.apk">Скачать ГлавРадио для android OS</a></p>
-
-<p><a href="https://qiwi.com/n/DENNISDEAF">Благодарить автора<a></a>
-
-<p align="center">Связаться со мной всегда можно: <a href="https://t.me/denisdeaf">@denisdeaf</a></p>
-
-
-<p align="right"> - Denis Deaf.</p>     
-
-<!--/Содержимое формы-->
-
-        </div>
-      </div>
-      <nav>
-        <span id="connect-link">ГлавРадио</span>
-        <span id="library-link"><i class="fas fa-list"></i></span>
-      </nav>
-      <div class="song-info">
-        <img
-          src="./img/vesti.webp"
-          alt="" 
-        />
-        <div>
-          <h2>Вести ФМ</h2>
-          <h3>Первое новостное радио в России</h3>
-        </div>
-      </div>
-      <div class="player">
-        <div>
-          <input type="range" />
-          <div></div>
-        </div>
-        <span>start</span>
-        <span>online</span>
-      </div>
-      <div class="player-control">
-        <i class="fas fa-backward" id="backward"></i>
-        <i class="fas fa-play" id="play-pause"></i>
-        <i class="fas fa-forward" id="forward"></i>
-      </div>
-      <div class="sound-control">
-        <i class="fas fa-volume-down"></i>
-        <input type="range" max="100" step="1" />
-        <i class="fas fa-volume-up"></i>
-      </div>
-      <audio src="https://icecast-vgtrk.cdnvideo.ru/vestifm_aac_32kbps"></audio>
-
-
-
+				<a href="javascript:;" class="jp-play" id="shower7"><img src="images/zvuk-reki.png" title="Шум реки" alt="шум реки" class="img1"></a>
+				<a href="javascript:;" class="jp-pause" id="hider7" style="display: none;"><img src="images/zvuk-reki.png" title="шум реки" alt="шум реки" class="img2"></a>
+            <br><h4 style="font-size:15px;">Звук Реки</h4>
+				<div class="jp-volume-bar7 ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="visibility: hidden" id="slvolume7"><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 80%;"></span></div>
+	
+		</div>				
     </div>
-    <div class="library">
+	
+    <div class="col-xs-6 col-sm-4">
+		<div id="jp_container_13" class="jp-state-looped">			
 
-      <div class="library-song selected" id="0">
-        <img style="width:60px;"
-          src="./img/vesti.webp"
-          alt="" class="round" width="100"
-        />
-        <div class="library-song-info">
-          <h3>Вести ФМ</h3>
-          <h4>Первое новостное радио</h4>
-        </div>
-      </div>
+				<a href="javascript:;" class="jp-play" id="shower13"><img src="images/zvuk-dojdya.png" title="Дождь" alt="звук дождя" class="img1"></a>
+				<a href="javascript:;" class="jp-pause" id="hider13" style="display: none;"><img src="images/zvuk-dojdya.png" title="Дождь" alt="звук дождя" class="img2"></a>
+            <br><h4 style="font-size:15px;">Шум Дождя</h4>
+				<div class="jp-volume-bar13 ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="visibility: hidden" id="slvolume13"><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 80%;"></span></div>
+	
+		</div>				
+    </div>	
+		
+	<div class="col-xs-6 col-sm-4">	
+		<div id="jp_container_2" class="jp-state-looped">
+				
+				<a href="javascript:;" class="jp-play" id="shower2"><img src="images/zvuki-lesa.png" title="Звуки леса" alt="лесные звуки" class="img1"></a>		
+				<a href="javascript:;" class="jp-pause" id="hider2" style="display: none;"><img src="images/zvuki-lesa.png" title="Звуки леса" alt="лесные звуки" class="img2"></a>
+            <br><h4 style="font-size:15px;">Звуки Леса</h4>
+				<div class="jp-volume-bar2 ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="visibility: hidden" id="slvolume2"><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 50%;"></span></div>
+						
+		</div>				
+	</div>	
+	
+	<div class="col-xs-6 col-sm-4">	
+		<div id="jp_container_8" class="jp-state-looped">				
 
+				<a href="javascript:;" class="jp-play" id="shower8"><img src="images/zvuk-kostra.png" title="Звук костра" alt="костер" class="img1"></a>
+				<a href="javascript:;" class="jp-pause" id="hider8" style="display: none;"><img src="images/zvuk-kostra.png" title="Звук костра" alt="костер" class="img2"></a>
+            <br><h4 style="font-size:15px;">Звук Костра</h4>
+				<div class="jp-volume-bar8 ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="visibility: hidden" id="slvolume8"><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 80%;"></span></div>
 
+		</div>				
+    </div>	
 
+	<div class="col-xs-6 col-sm-4">	
+		<div id="jp_container_14" class="jp-state-looped">				
 
+				<a href="javascript:;" class="jp-play" id="shower14"><img src="images/zvuk-grozy.png" title="Гроза" alt="Звук грозы" class="img1"></a>
+				<a href="javascript:;" class="jp-pause" id="hider14" style="display: none;"><img src="images/zvuk-grozy.png" title="Гроза" alt="Звук грозы" class="img2"></a>
+            <br><h4 style="font-size:15px;">Шум Грозы</h4>
+				<div class="jp-volume-bar14 ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="visibility: hidden" id="slvolume14"><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 80%;"></span></div>
 
-      <div class="library-song" id="1">
-        <img style="width:60px;"
-          src="./img/kpravda.webp"
-          alt="" class="round" 
-        />
-        <div class="library-song-info">
-          <h3>Комсомольская правда</h3>
-          <h4>Новости, разговорное</h4>
-        </div>
-      </div>
+		</div>				
+    </div>
 
+	
+	<div class="col-xs-6 col-sm-4">	
+		<div id="jp_container_3" class="jp-state-looped">				
 
+				<a href="javascript:;" class="jp-play" id="shower3"><img src="images/veter.png" title="Ветер" alt="звук ветра" class="img1"></a>
+				<a href="javascript:;" class="jp-pause" id="hider3" style="display: none;"><img src="images/veter.png" title="Ветер" alt="звук ветра" class="img2"></a>
+            <br><h4 style="font-size:15px;">Шум Ветра</h4>
+				<div class="jp-volume-bar3 ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="visibility: hidden" id="slvolume3"><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 80%;"></span></div>
+				
+		</div>				
+	</div>		
+	
+	<div class="col-xs-6 col-sm-4">	
+		<div id="jp_container_9" class="jp-state-looped">				
+				
+				<a href="javascript:;" class="jp-play" id="shower9"><img src="images/noch.png" title="Ночь" alt="Ночные звуки" class="img1"></a>
+				<a href="javascript:;" class="jp-pause" id="hider9" style="display: none;"><img src="images/noch.png" title="Ночь" alt="Ночные звуки" class="img2"></a>
+            <br><h4 style="font-size:15px;">Шум Ночи</h4>
+				<div class="jp-volume-bar9 ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="visibility: hidden" id="slvolume9"><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 80%;"></span></div>
+		
+		</div>				
+    </div>
+	
+	<div class="col-xs-6 col-sm-4">	
+		<div id="jp_container_20" class="jp-state-looped">				
 
+				<a href="javascript:;" class="jp-play" id="shower20"><img src="images/zvuk-listev.png" title="Листья" alt="Шум листьев" class="img1"></a>
+				<a href="javascript:;" class="jp-pause" id="hider20" style="display: none;"><img src="images/zvuk-listev.png" title="Leaves" alt="Шум листьев" class="img2"></a>
+            <br><h4 style="font-size:15px;">Шум Листьев</h4>
+				<div class="jp-volume-bar20 ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="visibility: hidden" id="slvolume20"><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 80%;"></span></div>
 
-      <div class="library-song" id="2">
-       <img style="width:60px;"
-          src="./img/zvezda.webp"
-          alt="" class="round" 
-        />
-        <div class="library-song-info">
-          <h3>Звезда</h3>
-          <h4>Военное радио, новости, разговорное</h4>
-        </div>
-      </div>
+		</div>						
+    </div>
+	
+	<div class="col-xs-6 col-sm-4">
+		<div id="jp_container_16" class="jp-state-looped">				
 
+				<a href="javascript:;" class="jp-play" id="shower16"><img src="images/zvuk-kolokola.png" title="Колокольчики" alt="Колокольчики" class="img1"></a>
+				<a href="javascript:;" class="jp-pause" id="hider16" style="display: none;"><img src="images/zvuk-kolokola.png" title="Колокольчики" alt="Колокольчики" class="img2"></a>
+            <br><h4 style="font-size:15px;">Колокольчики</h4>
+				<div class="jp-volume-bar16 ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="visibility: hidden" id="slvolume16"><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 80%;"></span></div>
+	
+		</div>				
+	</div>	
+	
+	<div class="col-xs-6 col-sm-4">	
+		<div id="jp_container_15" class="jp-state-looped">				
 
+				<a href="javascript:;" class="jp-play" id="shower15"><img src="images/sneg.png" title="Метель" alt="Звук метели" class="img1"></a>
+				<a href="javascript:;" class="jp-pause" id="hider15" style="display: none;"><img src="images/sneg.png" title="Метель" alt="Звук метели" class="img2"></a>
+            <br><h4 style="font-size:15px;">Шаги по снегу</h4>
+				<div class="jp-volume-bar15 ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="visibility: hidden" id="slvolume15"><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 80%;"></span></div>
+		
+		</div>				
+    </div>
+	
+	<div class="col-xs-6 col-sm-4">	
+		<div id="jp_container_17" class="jp-state-looped">				
 
+				<a href="javascript:;" class="jp-play" id="shower17"><img src="images/kafe.png" title="Кафе" alt="Звук в кафе" class="img1"></a>
+				<a href="javascript:;" class="jp-pause" id="hider17" style="display: none;"><img src="images/kafe.png" title="Кафе" alt="Звук в кафе" class="img2"></a>
+            <br><h4 style="font-size:15px;">Звуки в кафе</h4>
+				<div class="jp-volume-bar17 ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="visibility: hidden" id="slvolume17"><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 80%;"></span></div>
+	
+		</div>				
+    </div>
+	
+	
+	<div class="col-xs-6 col-sm-4">
+		<div id="jp_container_10" class="jp-state-looped">				
 
-      <div class="library-song" id="3">
-        <img style="width:60px;"
-          src="./img/mayak.webp"
-          alt="" class="round" 
-        />
-        <div class="library-song-info">
-          <h3>Маяк</h3>
-          <h4>Новости, разговорное</h4>
-        </div>
-      </div>
+				<a href="javascript:;" class="jp-play" id="shower10"><img src="images/dolphin.png" title="Дельфин" alt="Звук дельфина" class="img1"></a>
+				<a href="javascript:;" class="jp-pause" id="hider10" style="display: none;"><img src="images/dolphin.png" title="Дельфин" alt="Звук дельфина" class="img2"></a>
+            <br><h4 style="font-size:15px;">Дельфины</h4>
+				<div class="jp-volume-bar10 ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="visibility: hidden" id="slvolume10"><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 80%;"></span></div>
+		
+		</div>
+	</div>	
 
+	<div class="col-xs-6 col-sm-4">
+		<div id="jp_container_12" class="jp-state-looped">				
+				
+				<a href="javascript:;" class="jp-play" id="shower12"><img src="images/motor.png" title="Звук мотора" alt="моторная лодка" class="img1"></a>
+				<a href="javascript:;" class="jp-pause" id="hider12" style="display: none;"><img src="images/motor.png" title="Звук мотора" alt="моторная лодка" class="img2"></a>
+            <br><h4 style="font-size:15px;">Шум Лодки</h4>
+				<div class="jp-volume-bar12 ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="visibility: hidden" id="slvolume12"><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 80%;"></span></div>
 
+		</div>				
+    </div>
 
-      <div class="library-song" id="4">
-        <img style="width:60px;"
-          src="./img/sputnik.webp"
-          alt="" class="round"
-        />
-        <div class="library-song-info">
-          <h3>Sputnik</h3>
-          <h4>Новости, разговорное</h4>
-        </div>
-      </div>
+	<div class="col-xs-6 col-sm-4">	
+		<div id="jp_container_5" class="jp-state-looped">				
 
+				<a href="javascript:;" class="jp-play" id="shower5"><img src="images/song.png" title="Мелодия" alt="Звуки шкатулки" class="img1"></a>
+				<a href="javascript:;" class="jp-pause" id="hider5" style="display: none;"><img src="images/song.png" title="Мелодия" alt="Звуки шкатулки" class="img2"></a>
+            <br><h4 style="font-size:15px;">Шкатулка</h4>
+				<div class="jp-volume-bar5 ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="visibility: hidden" id="slvolume5"><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 80%;"></span></div>
 
+		</div>				
+	</div>
+	
+	<div class="col-xs-6 col-sm-4">	
+		<div id="jp_container_4" class="jp-state-looped">				
 
-      <div class="library-song" id="5">
-        <img style="width:60px;"
-          src="./img/radio-russia.webp"
-          alt="" class="round" 
-        />
-        <div class="library-song-info">
-          <h3>Радио России</h3>
-          <h4>Новости, разговорное</h4>
-        </div>
-      </div>
+				<a href="javascript:;" class="jp-play" id="shower4" style="display: inline;"><img src="images/1shum.png" title="Белый шум" alt="белый шум" class="img1"></a>
+				<a href="javascript:;" class="jp-pause" id="hider4" style="display: none;"><img src="images/1shum.png" title="Белый шум" alt="белый шум" class="img2"></a>
+            <br><h4 style="font-size:15px;">Белый Шум</h4>
+				<div class="jp-volume-bar4 ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="visibility: hidden;" id="slvolume4"><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 96%;"></span></div>
 
+		</div>
+    </div>
 
+	<div class="col-xs-6 col-sm-4">
+		<div id="jp_container_6" class="jp-state-looped">				
 
-<div class="library-song" id="6">
-        <img style="width:60px;"
-          src="./img/retrofm.webp"
-          alt="" class="round" 
-        />
-        <div class="library-song-info">
-          <h3>Ретро ФМ</h3>
-          <h4>Музыкальное радио</h4>
-        </div>
-      </div>
+				<a href="javascript:;" class="jp-play" id="shower6"><img src="images/poezd.png" title="Поезд" alt="звук поезда" class="img1"></a>
+				<a href="javascript:;" class="jp-pause" id="hider6" style="display: none;"><img src="images/poezd.png" title="Поед" alt="звук поезда" class="img2"></a>
+            <br><h4 style="font-size:15px;">Шум Поезда</h4>
+				<div class="jp-volume-bar6 ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="visibility: hidden" id="slvolume6"><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 80%;"></span></div>
+			
+		</div>	
+    </div>
 
-<div class="library-song" id="7">
-        <img style="width:60px;"
-          src="./img/dennis.jpg"
-          alt="" class="round" 
-        />
-        <div class="library-song-info">
-          <h3>Best Disco 80S</h3>
-          <h4>denis.101.ru</h4>
-        </div>
-      </div>
+	<div class="col-xs-6 col-sm-4">	
+		<div id="jp_container_21" class="jp-state-looped">				
 
-<div class="library-song" id="8">
-        <img style="width:60px;"
-          src="./img/avtoradio.webp"
-          alt="" class="round" 
-        />
-        <div class="library-song-info">
-          <h3>АвтоРадио</h3>
-          <h4>Сочи 101.1 FM</h4>
-        </div>
-      </div>
+				<a href="javascript:;" class="jp-play" id="shower21"><img src="images/2shum.png" title="Розовый шум" alt="розовый шум" class="img1"></a>
+				<a href="javascript:;" class="jp-pause" id="hider21" style="display: none;"><img src="images/2shum.png" title="Розовый шум" alt="розовый шум" class="img2"></a>
+            <br><h4 style="font-size:15px;">Розовый Шум</h4>
+				<div class="jp-volume-bar21 ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="visibility: hidden" id="slvolume21"><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 80%;"></span></div>
+	
+		</div>
+	</div>	
+	
+	<div class="col-xs-6 col-sm-4">
+		<div id="jp_container_11" class="jp-state-looped">				
 
+				<a href="javascript:;" class="jp-play" id="shower11"><img src="images/zvuk-dorogi.png" title="Дорога" alt="Шум дороги" class="img1"></a>
+				<a href="javascript:;" class="jp-pause" id="hider11" style="display: none;"><img src="images/zvuk-dorogi.png" title="Дорога" alt="Шум дороги" class="img2"></a>
+            <br><h4 style="font-size:15px;">Шум Дороги</h4>
+				<div class="jp-volume-bar11 ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="visibility: hidden" id="slvolume11"><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 80%;"></span></div>
+				
+		</div>			
+	</div>
 
-<div class="library-song" id="9">
-        <img style="width:60px;"
-          src="./img/maxfm.webp"
-          alt="" class="round" 
-        />
-        <div class="library-song-info">
-          <h3>Макс FM</h3>
-          <h4>Сочинское радио</h4>
-        </div>
-      </div>
+	<div class="col-xs-6 col-sm-4">
+	    <div id="jp_container_19" class="jp-state-looped">			
 
-<div class="library-song" id="10">
-        <img style="width:60px;"
-          src="./img/solovey.jpg"
-          alt="" class="round" 
-        />
-        <div class="library-song-info">
-          <h3>СоловьёвFM</h3>
-          <h4>Новости, разговорное</h4>
-        </div>
-      </div>
+				<a href="javascript:;" class="jp-play" id="shower19"><img src="images/bird.png" title="Пение птиц" alt="звук кота" class="img1"></a>
+				<a href="javascript:;" class="jp-pause" id="hider19" style="display: none;"><img src="images/bird.png" title="Пение птиц" alt="звук кота" class="img2"></a>
+            <br><h4 style="font-size:15px;">Пение птиц</h4>
+				<div class="jp-volume-bar19 ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="visibility: hidden" id="slvolume19"><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 80%;"></span></div>
+				
+		</div>						
+     </div>
+		
+	<div class="col-xs-6 col-sm-4">	
+		<div id="jp_container_18" class="jp-state-looped">			
 
-
-<div class="library-song" id="11">
-        <img style="width:60px;"
-          src="./img/radiola.png"
-          alt="" class="round" 
-        />
-        <div class="library-song-info">
-          <h3>Radio/LA</h3>
-          <h4>Культовые хиты рубежа 90х-00х</h4>
-        </div>
-      </div>
-
-
-
-      <div class="add-song">Скачать приложение</div><br>
-
-<center>
-
-</center>
-
-
-
+				<a href="javascript:;" class="jp-play" id="shower18"><img src="images/selo.png" title="Деревня" alt="звуки деревни" class="img1"></a>
+				<a href="javascript:;" class="jp-pause" id="hider18" style="display: none;"><img src="images/selo.png" title="Деревня" alt="звуки деревни" class="img2"></a>
+            <br><h4 style="font-size:15px;">Шум Деревни</h4>
+				<div class="jp-volume-bar18 ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="visibility: hidden" id="slvolume18"><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 80%;"></span></div>
+	
+		</div>	
     </div>
     
-    <script src="./scripts/songs.js"></script>
-    <script src="./scripts/app.js"></script>
-    <script src="./scripts/auth.js"></script>
-    <script src="./scripts/storage.js"></script>
-  </body>
-</html>
+    	<div class="col-xs-6 col-sm-4">
+		<div id="jp_container_22" class="jp-state-looped">				
+
+				<a href="javascript:;" class="jp-play" id="shower22"><img src="images/dyatel.png" title="Стук дятла" alt="Звук дятла" class="img1"></a>
+				<a href="javascript:;" class="jp-pause" id="hider22" style="display: none;"><img src="images/dyatel.png" title="Стук дятла" alt="Звук дятла" class="img2"></a>
+            <br><h4 style="font-size:15px;">Звук Дятла</h4>
+				<div class="jp-volume-bar22 ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="visibility: hidden" id="slvolume22"><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 80%;"></span></div>
+				
+		</div>			
+	</div>
+
+	<div class="col-xs-6 col-sm-4">
+	    <div id="jp_container_23" class="jp-state-looped">			
+
+				<a href="javascript:;" class="jp-play" id="shower23"><img src="images/heart.png" title="Биение сердца" alt="звук сердца" class="img1"></a>
+				<a href="javascript:;" class="jp-pause" id="hider23" style="display: none;"><img src="images/heart.png" title="Биение сердца" alt="звук сердца" class="img2"></a>
+            <br><h4 style="font-size:15px;">Звук Сердца</h4>
+				<div class="jp-volume-bar23 ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="visibility: hidden" id="slvolume23"><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 80%;"></span></div>
+				
+		</div>						
+     </div>
+		
+	<div class="col-xs-6 col-sm-4">	
+		<div id="jp_container_24" class="jp-state-looped">			
+
+				<a href="javascript:;" class="jp-play" id="shower24"><img src="images/kapli.png" title="Падающие капли" alt="звуки капель" class="img1"></a>
+				<a href="javascript:;" class="jp-pause" id="hider24" style="display: none;"><img src="images/kapli.png" title="Падающие капли" alt="звуки капель" class="img2"></a>
+            <br><h4 style="font-size:15px;">Звук Капель</h4>
+				<div class="jp-volume-bar24 ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="visibility: hidden" id="slvolume24"><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 80%;"></span></div>
+	
+		</div>	
+    </div>
+   <div class="col-xs-6 col-sm-4">
+		<div id="jp_container_25" class="jp-state-looped">				
+
+				<a href="javascript:;" class="jp-play" id="shower25"><img src="images/frog.png" title="Кваканье лягушек" alt="Звук лягушек" class="img1"></a>
+				<a href="javascript:;" class="jp-pause" id="hider25" style="display: none;"><img src="images/frog.png" title="Кваканье лягушек" alt="Звук лягушек" class="img2"></a>
+            <br><h4 style="font-size:15px;">Кваканье</h4>
+				<div class="jp-volume-bar25 ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="visibility: hidden" id="slvolume25"><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 80%;"></span></div>
+				
+		</div>			
+	</div>
+
+	<div class="col-xs-6 col-sm-4">
+	    <div id="jp_container_26" class="jp-state-looped">			
+
+				<a href="javascript:;" class="jp-play" id="shower26"><img src="images/bee.png" title="Жужжание пчел" alt="звук пчел" class="img1"></a>
+				<a href="javascript:;" class="jp-pause" id="hider26" style="display: none;"><img src="images/bee.png" title="Жужжание пчел" alt="звук пчел" class="img2"></a>
+            <br><h4 style="font-size:15px;">Пчелки</h4>
+				<div class="jp-volume-bar26 ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="visibility: hidden" id="slvolume26"><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 80%;"></span></div>
+				
+		</div>						
+     </div>
+		
+	<div class="col-xs-6 col-xs-offset-3 col-sm-4">	
+		<div id="jp_container_27" class="jp-state-looped">			
+
+				<a href="javascript:;" class="jp-play" id="shower27"><img src="images/waterfall.png" title="Водопад" alt="звуки водопада" class="img1"></a>
+				<a href="javascript:;" class="jp-pause" id="hider27" style="display: none;"><img src="images/waterfall.png" title="Водопад" alt="звуки водопада" class="img2"></a>
+            <br><h4 style="font-size:15px;">Звук Водопада</h4>
+				<div class="jp-volume-bar27 ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="visibility: hidden" id="slvolume27"><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 80%;"></span></div>
+	
+		</div>	
+    </div>
+   
+    
+		
+    </div> <!-- /row end -->
+	
+</div> <!-- end content -->
+		 
+			
+    </div> <!-- end main -->
+	
+		
+</section> 
+
+
+
+
+	
+
+
+<!-- Hide-Show slider -->		
+<script>
+$( "#hider1" ).click(function() {
+  $( "#slvolume1" ).css( "visibility", "hidden" );
+});
+$( "#shower1" ).click(function() {
+  $( "#slvolume1" ).css( "visibility", "visible" );
+});
+
+$( "#hider2" ).click(function() {
+  $( "#slvolume2" ).css( "visibility", "hidden" );
+});
+$( "#shower2" ).click(function() {
+  $( "#slvolume2" ).css( "visibility", "visible" );
+});
+
+$( "#hider3" ).click(function() {
+  $( "#slvolume3" ).css( "visibility", "hidden" );
+});
+$( "#shower3" ).click(function() {
+  $( "#slvolume3" ).css( "visibility", "visible" );
+});
+
+$( "#hider4" ).click(function() {
+  $( "#slvolume4" ).css( "visibility", "hidden" );
+});
+$( "#shower4" ).click(function() {
+  $( "#slvolume4" ).css( "visibility", "visible" );
+});
+
+$( "#hider5" ).click(function() {
+  $( "#slvolume5" ).css( "visibility", "hidden" );
+});
+$( "#shower5" ).click(function() {
+  $( "#slvolume5" ).css( "visibility", "visible" );
+});
+
+$( "#hider6" ).click(function() {
+  $( "#slvolume6" ).css( "visibility", "hidden" );
+});
+$( "#shower6" ).click(function() {
+  $( "#slvolume6" ).css( "visibility", "visible" );
+});
+
+$( "#hider7" ).click(function() {
+  $( "#slvolume7" ).css( "visibility", "hidden" );
+});
+$( "#shower7" ).click(function() {
+  $( "#slvolume7" ).css( "visibility", "visible" );
+});
+
+$( "#hider8" ).click(function() {
+  $( "#slvolume8" ).css( "visibility", "hidden" );
+});
+$( "#shower8" ).click(function() {
+  $( "#slvolume8" ).css( "visibility", "visible" );
+});
+
+$( "#hider9" ).click(function() {
+  $( "#slvolume9" ).css( "visibility", "hidden" );
+});
+$( "#shower9" ).click(function() {
+  $( "#slvolume9" ).css( "visibility", "visible" );
+});
+
+$( "#hider10" ).click(function() {
+  $( "#slvolume10" ).css( "visibility", "hidden" );
+});
+$( "#shower10" ).click(function() {
+  $( "#slvolume10" ).css( "visibility", "visible" );
+});
+
+$( "#hider11" ).click(function() {
+  $( "#slvolume11" ).css( "visibility", "hidden" );
+});
+$( "#shower11" ).click(function() {
+  $( "#slvolume11" ).css( "visibility", "visible" );
+});
+
+$( "#hider12" ).click(function() {
+  $( "#slvolume12" ).css( "visibility", "hidden" );
+});
+$( "#shower12" ).click(function() {
+  $( "#slvolume12" ).css( "visibility", "visible" );
+});
+
+$( "#hider13" ).click(function() {
+  $( "#slvolume13" ).css( "visibility", "hidden" );
+});
+$( "#shower13" ).click(function() {
+  $( "#slvolume13" ).css( "visibility", "visible" );
+});
+
+$( "#hider14" ).click(function() {
+  $( "#slvolume14" ).css( "visibility", "hidden" );
+});
+$( "#shower14" ).click(function() {
+  $( "#slvolume14" ).css( "visibility", "visible" );
+});
+
+$( "#hider15" ).click(function() {
+  $( "#slvolume15" ).css( "visibility", "hidden" );
+});
+$( "#shower15" ).click(function() {
+  $( "#slvolume15" ).css( "visibility", "visible" );
+});
+
+$( "#hider16" ).click(function() {
+  $( "#slvolume16" ).css( "visibility", "hidden" );
+});
+$( "#shower16" ).click(function() {
+  $( "#slvolume16" ).css( "visibility", "visible" );
+});
+
+$( "#hider17" ).click(function() {
+  $( "#slvolume17" ).css( "visibility", "hidden" );
+});
+$( "#shower17" ).click(function() {
+  $( "#slvolume17" ).css( "visibility", "visible" );
+});
+
+$( "#hider18" ).click(function() {
+  $( "#slvolume18" ).css( "visibility", "hidden" );
+});
+$( "#shower18" ).click(function() {
+  $( "#slvolume18" ).css( "visibility", "visible" );
+});
+
+$( "#hider19" ).click(function() {
+  $( "#slvolume19" ).css( "visibility", "hidden" );
+});
+$( "#shower19" ).click(function() {
+  $( "#slvolume19" ).css( "visibility", "visible" );
+});
+
+$( "#hider20" ).click(function() {
+  $( "#slvolume20" ).css( "visibility", "hidden" );
+});
+$( "#shower20" ).click(function() {
+  $( "#slvolume20" ).css( "visibility", "visible" );
+});
+
+$( "#hider21" ).click(function() {
+  $( "#slvolume21" ).css( "visibility", "hidden" );
+});
+$( "#shower21" ).click(function() {
+  $( "#slvolume21" ).css( "visibility", "visible" );
+});
+
+$( "#hider22" ).click(function() {
+  $( "#slvolume22" ).css( "visibility", "hidden" );
+});
+$( "#shower22" ).click(function() {
+  $( "#slvolume22" ).css( "visibility", "visible" );
+});
+
+$( "#hider23" ).click(function() {
+  $( "#slvolume23" ).css( "visibility", "hidden" );
+});
+$( "#shower23" ).click(function() {
+  $( "#slvolume23" ).css( "visibility", "visible" );
+});
+	
+$( "#hider24" ).click(function() {
+  $( "#slvolume24" ).css( "visibility", "hidden" );
+});
+$( "#shower24" ).click(function() {
+  $( "#slvolume24" ).css( "visibility", "visible" );
+});
+	
+$( "#hider25" ).click(function() {
+  $( "#slvolume25" ).css( "visibility", "hidden" );
+});
+$( "#shower25" ).click(function() {
+  $( "#slvolume25" ).css( "visibility", "visible" );
+});
+	
+$( "#hider26" ).click(function() {
+  $( "#slvolume26" ).css( "visibility", "hidden" );
+});
+$( "#shower26" ).click(function() {
+  $( "#slvolume26" ).css( "visibility", "visible" );
+});
+	
+$( "#hider27" ).click(function() {
+  $( "#slvolume27" ).css( "visibility", "hidden" );
+});
+$( "#shower27" ).click(function() {
+  $( "#slvolume27" ).css( "visibility", "visible" );
+});
+
+</script>
+<!-- JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+$(document).ready(function () {
+	$('.home').css('cursor', 'pointer');
+	$('.about').css('cursor', 'pointer');
+	$('.contact').css('cursor', 'pointer');
+	
+	$('.home').click(function() {
+		$('#about').addClass('hide');
+		$('#contact').addClass('hide');
+		$('#home').fadeIn(700);
+		$('#home').removeClass('hide');
+		$('.about').removeClass('active');
+		$('.contact').removeClass('active');
+		$('.home').addClass('active');
+	});
+	$('.about').click(function(){
+		$('#home').addClass('hide');
+		$('#contact').addClass('hide');
+		$('#about').fadeIn(700);
+		$('#about').removeClass('hide');
+		$('.home').removeClass('active');
+		$('.contact').removeClass('active');
+		$('.about').addClass('active');
+		
+	});
+	$('.contact').click(function(){
+		$('#home').addClass('hide');
+		$('#about').addClass('hide');
+		$('#contact').fadeIn(700);
+		$('#contact').removeClass('hide');
+		$('.home').removeClass('active');
+		$('.about').removeClass('active');
+		$('.contact').addClass('active');
+	});
+	
+});
+
+
+$('body').toggleClass('background');
+
+$('#cb1').on('click', function () { $('body').toggleClass('background'); });
+</script>
+
+<!-- <script src="birds/index.js"></script> -->
+<!-- Share buttons by Cubecamp.ru  www.cubecamp.ru/articles/share/cubecamp.html 
+<script src="js/share.js"></script>-->
+
+
+
+</body></html>
