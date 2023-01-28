@@ -1,0 +1,25 @@
+{
+  "lang": "ru",
+  "version": "1.5",
+  "name": "New Generation",
+  "short_name": "Italo Disco",
+"description": "Italo music new generation Disco",
+"scope": "/myapp",
+
+
+    "icons": [{
+        "src": "icon/100radio.png",
+        "sizes": "70x70"
+    }],
+
+
+  "start_url": "/index.html",
+  "display": "fullscreen",
+  "orientation": "any",
+
+
+
+  "background_color": "#4e664f",
+  "theme_color": "#4e664f"
+}
+

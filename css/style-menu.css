@@ -1,9 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  background: #afc29b;
-  color: #afc29b;
   font-family: "Avenir Next", "Avenir", sans-serif;overflow-x: hidden
+ 
+ 
 }
 
 a {
@@ -28,8 +28,8 @@ a:hover {
 
 #menuToggle input {
   display: block;
-  width: 40px;
-  height: 32px;
+  width: 100px;
+  height: 80px;
   position: absolute;
   top: -7px;
   left: -5px;  
