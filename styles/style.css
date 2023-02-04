@@ -1,8 +1,35 @@
 * {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+padding: 0;
+margin: 0;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+-webkit-touch-callout: none; /* iOS Safari */
+-webkit-user-select: none; /* Safari */
+-khtml-user-select: none; /* Konqueror HTML */
+-moz-user-select: none; /* Old versions of Firefox */
+-ms-user-select: none; /* Internet Explorer/Edge */
+user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+
+
+
+
+
+
+
+
+
+.inf{
+width: 90%;
+margin: auto;
+}
+
+
+.myname{
+font-size: 0.8em;
+color: #384252;
+
 }
 
 body {
@@ -22,16 +49,17 @@ body {
 }
 
 .app {
-  width: 400px;
-  padding: 0 1rem;
-  max-height: 100vh;
+  width: 500px;
+  padding: 0;
+  max-height: 100%;
+  /* height: 100%;  */
   overflow: hidden;
-  background-color: #1a1f28;
+  background-color: #13171e;
   position: relative;
 }
 
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 9px;
 }
 
 ::-webkit-scrollbar-track {
@@ -45,6 +73,11 @@ body {
   border: transparent;
 }
 
+h1 {
+    display: block;
+    font-size: 1em;
+    font-weight: 400;
+}
 nav {
   min-height: 10vh;
   display: -webkit-box;
@@ -57,7 +90,7 @@ nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 10px;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 nav span:last-child {
@@ -84,7 +117,7 @@ nav .library-opened-link {
 }
 
 .song-info {
-  min-height: 58vh;
+  min-height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,8 +139,8 @@ nav .library-opened-link {
 }
 
 .song-info .playing {
-  -webkit-animation: playRotate 6s infinite forwards linear;
-          animation: playRotate 6s infinite forwards linear;
+  -webkit-animation: playRotate 7s infinite forwards linear;
+          animation: playRotate 7s infinite forwards linear;
 }
 
 .song-info h2 {
@@ -119,15 +152,19 @@ nav .library-opened-link {
   margin-bottom: 0.2rem;
 }
 
-.song-info h2,
-.song-info h3 {
+.song-info h2 {
   font-weight: 400;
   text-align: center;
 }
 
+
 .song-info h3 {
+  font-weight: 400;
+  text-align: justify;
   font-size: 0.8rem;
 }
+
+
 
 @-webkit-keyframes playRotate {
   to {
@@ -286,11 +323,11 @@ nav .library-opened-link {
 .library {
   max-height: 100vh;
   min-height: 100vh;
-  width: 300px;
+  width: 500px;
   position: absolute;
   top: 0;
   left: 0;
-  background-image: linear-gradient(300deg, #291f85, #3d3781, #444479);
+  background-image: linear-gradient(300deg, #291f85, #17106a, #444479);
   overflow: auto;
   opacity: 0;
   -webkit-transform: translateX(-100%);

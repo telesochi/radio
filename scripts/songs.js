@@ -3,7 +3,7 @@ let songs = [
     name: "Вести ФМ",
     cover:
       "./img/vesti.webp",
-    artist: "Первое новостное радио",
+    artist: "Вести FM — входит в топ-5 популярных радиостанций Москвы. Когда хотят узнать новости, послушать интервью с экспертами, аналитический обзор или специальный репортаж, то выбирают этот канал.",
     audio: "https://icecast-vgtrk.cdnvideo.ru/vestifm_aac_32kbps",
     id: 0,
   },
@@ -11,7 +11,7 @@ let songs = [
     name: "Комсомольская правда",
     cover:
       "./img/kpravda.webp",
-    artist: "Новости",
+    artist: "Общественно-политическая радиостанция с FM-вещанием более чем в 400 населенных пунктах России — от Калининграда до Петропавловска-Камчатского. Занимает 2 место в рейтинге «Медиалогии» среди самых цитируемых станций РФ. Аудитория радио «Комсомольская правда»: более 2 миллионов слушателей в сутки.",
     audio: "https://fed.fmplay.ru:8000/kpravda-32.aac",
     id: 1,
   },
@@ -19,7 +19,7 @@ let songs = [
     name: "Звезда",
     cover:
       "./img/zvezda.webp",
-    artist: "Военное радио, новости",
+    artist: "ОАО «Телерадиокомпания Вооруженных Сил Российской Федерации»",
     audio: "https://fed.fmplay.ru:8000/zvezda-32.aac",
     id: 2,
   },
@@ -49,20 +49,23 @@ let songs = [
   },
 
  {
-    name: "Ретро ФМ",
+
+    name: "СоловьёвFM",
     cover:
-      "./img/retrofm.webp",
-    artist: "Музыкальное",
-    audio: "https://fed.fmplay.ru:8000/retro-32.aac",
+      "./img/solovey.jpg",
+    artist: "Слушаем он лайн звук тв канала СоловьёвLIVE. Главные события внешней политики, освещение событий СВО на Украине. Эксперты разных областей в прямом эфире.",
+    audio: "https://solovievfm.hostingradio.ru/solovievfm128.aacp",
     id: 6,
   },
 
+
+
 {
-    name: "Best Disco 80S",
+    name: "Культура",
     cover:
-      "./img/dennis.jpg",
-    artist: "denis.101.ru",
-    audio: "https://pub0102.101.ru:8443/stream/personal/aacp/64/1781512?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJrZXkiOiIwNjBhYzBkMDMzZDExZjg0NTFhM2NiNjlmOTA1NTlkYyIsIklQIjoiMTg4LjE2Mi4xNDIuMTk4IiwiVUEiOiJNb3ppbGxhXC81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXRcLzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZVwvMTAzLjAuMC4wIFNhZmFyaVwvNTM3LjM2IiwiUmVmIjoiaHR0cHM6XC9cLzEwMS5ydVwvIiwidWlkX2NoYW5uZWwiOiIxNzgxNTEyIiwidHlwZV9jaGFubmVsIjoicGVyc29uYWwiLCJ0eXBlRGV2aWNlIjoiUEMiLCJCcm93c2VyIjoiQ2hyb21lIiwiQnJvd3NlclZlcnNpb24iOiIxMDMuMC4wLjAiLCJTeXN0ZW0iOiJXaW5kb3dzIDEwIiwiZXhwIjoxNjU3NTg0Mzg3fQ.BeKQXembGRdmwlOYGJyWyZJnKDgjqU7LHt6gVHtcaMo#.mp3",
+      "./img/kultura.jpg",
+    artist: "Радио Культура - одна из самых интересных и познавательных радиостанций в Москве. Вещает на частоте 91,6 FM с 1 ноября 2004 г. из Пятой студии на Малой Никитской. В эфире звучит разнообразная информация о событиях культурной жизни, радиотеатр, аналитические программы о музыке и многое другое.",
+    audio: "https://icecast-vgtrk.cdnvideo.ru/kulturafm_mp3_192kbps",
     id: 7,
   },
 
@@ -82,33 +85,87 @@ let songs = [
 
 
 {
-    name: "Макс FM",
+    name: "Русское радио",
     cover:
-      "./img/maxfm.webp",
-    artist: "Сочинское радио",
-    audio: "https://maksfm.hostingradio.ru/maksfm320.mp3",
+      "./img/rusradio.webp",
+    artist: "«Русское радио» — российская радиостанция, вещающая в некоторых странах СНГ и дальнего зарубежья как международная. Отличается от других станций трансляцией песен только на русском языке",
+    audio: "https://rusradio.hostingradio.ru/rusradio128.mp3",
     id: 9,
   },
 
 
 
 {
-    name: "СоловьёвFM",
+
+
+    name: "Ретро ФМ",
     cover:
-      "./img/solovey.jpg",
-    artist: "Новости, разговорное",
-    audio: "https://solovievfm.hostingradio.ru/solovievfm128.aacp",
+      "./img/retrofm.webp",
+    artist: "Музыкальное",
+    audio: "https://fed.fmplay.ru:8000/retro-32.aac",
     id: 10,
   },
 
 {
-    name: "Radio/LA",
+    name: "Новая волна",
     cover:
-      "./img/radiola.png",
-    artist: "Культовые хиты рубежа 90х-00х",
-    audio: "https://radiola.hostingradio.ru/radiola_srt_64.aac",
+      "./img/newwave.png",
+    artist: "Радио Новая волна уделяет внимание не только именитым артистам, но и исполнителям, чьи песни призваны стать хитами! Мы уверены, что у музыки нет формата. У музыки есть душа!",
+    audio: "https://s01.radio-tochka.com:4845/radio",
     id: 11,
   },
+
+
+
+{
+    name: "RMI New Generation",
+    cover:
+      "./img/new.png",
+    artist: "Italo Disco новой генерации. Современное техно Italo",
+    audio: "http://fred.torontocast.com:2330/stream#.mp3",
+    id: 12,
+  },
+
+
+{
+    name: "Chilla FM",
+    cover:
+      "./img/chilla.jpg",
+    artist: "lounge, deep, chillout, джаз и даже хип-хоп. Если вы трудитесь в офисе, то обязательно включайте Chilla FM на работе. Радиостанция специально создана, чтобы звучать фоном в течении всего трудового дня.",
+    audio: "https://chilla.amgradio.ru/ChillaFM",
+    id: 13,
+  },
+
+{
+    name: "Маруся ФМ",
+    cover:
+      "./img/marusa.webp",
+    artist: "Только лучшее, только горячее. Танцевальные хиты.",
+    audio: "https://radio-holding.ru:9433/marusya_default",
+    id: 14,
+  },
+
+{
+    name: "Европа Плюс",
+    cover:
+      "./img/europaplus.webp",
+    artist: "«Европа Плюс» — первая в СССР и России негосударственная коммерческая радиостанция. Вещает в формате CHR. Начала вещание 30 апреля 1990 года. Страны вещания: Россия, Украина, Киргизия, Казахстан, Молдавия, а также Таджикистан. Занимает лидирующую позицию среди радиосетей России.",
+    audio: "https://fed.fmplay.ru:8000/europaplus-32.aac",
+    id: 15,
+  },
+
+
+{
+    name: "NEON",
+    cover:
+      "./img/neon.png",
+    artist: "Высококачественная электронная музыка из Сочи. Внимание! - 128kbps а это 56 МБ в час.",
+    audio: "https://listen7.myradio24.com/5790",
+    id: 16,
+  },
+
+
+
 
 ];
 storageRef
