@@ -1,14 +1,14 @@
 {
   "lang": "ru",
-  "version": "1.5",
-  "name": "100RADIO",
-  "short_name": "100RADIO",
-"description": "Мы отобрали для вас лучшие российские онлайн радиоканалы",
+  "version": "1.7",
+  "name": "Radio Red - russian music",
+  "short_name": "Radio Red",
+"description": "Russian music.",
 "scope": "/myapp",
 
 
     "icons": [{
-        "src": "icon/100radio.png",
+        "src": "ico/rr.png",
         "sizes": "70x70"
     }],
 
