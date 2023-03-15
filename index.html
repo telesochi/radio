@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+<link rel="manifest" href="manifest.json">
+<link rel="shortcut icon" href="ico/radiored.png"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+
+<title>КРАСНОЕ РАДИО</title>
+<meta name="description" content="⏯ Russian music" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0">
+
+
+<style type="text/css">
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+#PS {display: none;}
+
+
+
+body{   
+color: #fff;
+background: #ce2727;
+
+}
+
+
+
+
+p {	
+font-family: tahoma,verdana;
+font-size: 12px;
+color: #ffffff;
+align: center;
+}
+
+p.header {
+font-family: tahoma,verdana;
+font-size: 18px;
+color: #3b3f4c;
+align: center;
+}
+p.sign {
+font-family: tahoma,verdana;
+font-size: 11px;
+color: #3b3f4c;
+align: center;
+}
+
+li {	font-family: tahoma,verdana;
+	font-size: 12px;
+	color: #222329;
+	font-weight: bold;
+	padding-left: 10px;
+	padding-bottom: 4px;
+}
+a {
+	font-family: tahoma,verdana;
+	font-size: 12px;
+	color: #0077be;
+	font-weight: 300;
+}
+ul {
+	padding-left: 25px;
+	list-style-image: url('http://timeweb.com/ru/img/bullet.gif')
+}
+p.line {
+	border-top: 1px solid #dbdbdb;
+}
+h3,h1 {
+	text-transform: uppercase;
+	display: inline-block;
+	margin: 0 5px 0 0;
+}
+a {
+    font-size: 1.17em;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+img.rot {
+  animation: 5s linear 0s normal none infinite running rot;
+  -webkit-animation: 5s linear 0s normal none infinite running rot;
+  width: 100px;
+}
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+</style>
+		
+
+</head>
+
+<body>&emsp;<br>
+<center><img src="images/radiored.png" width="338"></center>
+&emsp;<br><center>
+<div data-myinfo="img" style="width:200px; height:200px; background-size:cover;"></div>
+</center>
+&emsp;<br>
+<center>
+<h3><font color="#fff" face="Arial">
+<b data-myinfo="song"></b><br>
+next: <span data-myinfo="nextsong"></span>
+</font></h3>
+</center>&emsp;<br>
+<center>
+	<audio id="player" src="https://myradio24.org/radio777"></audio>
+		<div> 
+			<img src="./images/play1.png" width="100" id="PL" onclick="document.getElementById('player').play(); document.getElementById('PL').style.display = 'none';  document.getElementById('PS').style.display = 'block';">
+
+			<img src="./images/disc.png" class="rot" width="100" id="PS" onclick="document.getElementById('player').pause(); document.getElementById('PS').style.display = 'none'; document.getElementById('PL').style.display = 'block';">
+		</div>
+</center>
+<br><font color="#fff" face="Arial">
+
+
+
+
+
+
+<center>
+
+<h2>
+history<BR>
+<h4>
+<div class="my_lastsongs" data-revert=1 style="display:inline-block;">
+	<div class="my_lastsonghtml" style="display:none;">
+		<div style="text-align:left; margin:3px;">
+			<!--img src="https://myradio24.com/%songcover%" style="width:45px; height:45px; border-radius:4px; vertical-align:middle;"> 
+			%songtime% &nbsp;  -->
+			&bull; <a href="https://www.youtube.com/results?search_query=%songencode%" target="_blank" title="see in YouTube">%song%</a> 
+			<span class=vm_likes data-likeid='318761878_%songid%'></span>
+		</div>
+	</div>
+</div>
+
+</center>
+
+
+	<hr color="white" size="4" width="338" noshade><br>
+<center>
+	<a href="" target="_blank"><i class="fa fa-phone"></i></a>  &emsp;&emsp;
+	<a href="https://t.me/deafdenis" target="_blank"><i class="fa fa-telegram"></i></a>  &emsp;&emsp;
+	<a href="#" target="_blank"><i class="fa fa-user"></i></a>&nbsp;<b data-myinfo="plisteners"></b> 
+</center>
+</font>
+
+<script src="https://myradio24.com/player/player.js?v3.24" data-port="radio777" data-interval=15 data-vmid=0></script>
+</body>
+</html>
