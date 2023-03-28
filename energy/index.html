@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html class="h-full" lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Радио ENERGY — слушать онлайн бесплатно</title>
+  <meta name="description" content="Слушайте Радио ENERGY в прямом эфире и хорошем качестве бесплатно" />
+  <meta name="keywords" content="Радио, ENERGY, Энерджи, слушать, онлайн, бесплатно" />
+
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="apple-mobile-web-app-title" content="Радио">
+  <meta name="application-name" content="Радио">
+  <meta name="msapplication-TileColor" content="#3399cc">
+  <meta name="theme-color" content="#444444">
+
+      <link rel="stylesheet" type="text/css" href="../css/style.css?v=21">
+  
+      <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://radiopotok.mobi/energy">
+    <meta property="og:title" content="Радио ENERGY — слушать онлайн бесплатно">
+    <meta property="og:description" content="Слушайте Радио ENERGY в прямом эфире и хорошем качестве бесплатно">
+    <meta property="og:image" content="https://radiopotok.mobi/f/station/512/4.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@radiopotok_ru">
+    <meta name="twitter:creator" content="@radiopotok_ru">
+    <meta name="twitter:title" content="Радио ENERGY — слушать онлайн бесплатно">
+    <meta name="twitter:description" content="Слушайте Радио ENERGY в прямом эфире и хорошем качестве бесплатно">
+    <meta name="twitter:image:src" content="https://radiopotok.mobi/f/station/512/4.png">
+  
+  <script>
+    const ADS = true;
+  </script>
+</head>
+
+<body class="h-full bg-primary text-white">
+
+  
+
+  <div class="md:h-full relative js--fuadsense-1">
+    <div id="pageBG_image" style="background-image:url('/s/i/bg/blue.jpg')" class="fixed inset-0 bg-no-repeat bg-cover bg-center"></div>
+    <div id="pageBG_blur" class="fixed inset-0 backdrop-filter backdrop-blur"></div>
+    <!-- <div id="pageBG_preview" class="fixed inset-0 overflow-hidden"></div> -->
+    <div class="relative container mx-auto flex flex-wrap content-center space-y-4 h-full max-w-6xl js--fuadsense-2 js--content">
+  <main class="w-full md:self-center p-1 bg-secondary bg-opacity-50 rounded-2xl shadow-xl">
+    <div class="flex content-center space-x-4 p-2 mb-1">
+      <a href="../index5.html" class="rounded-full bg-white text-black p-2 border ring ring-white" title="Все станции">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        </svg>
+      </a>
+      <h1 class="text-xl pt-2 md:pt-0 md:text-4xl whitespace-nowrap md:whitespace-normal text-shadow">Радио ENERGY</h1>
+    </div>
+
+    <div class="relative grid grid-col-1 md:grid-cols-5 gap-1 md:gap-5 rounded-2xl ring ring-black overflow-hidden">
+      <!-- Cover Art -->
+      <div class="md:col-span-2 text-center relative z-10">
+        <div class="opacity-0 absolute top-8 left-0 h-4 w-4">
+          <div id="playerjs"></div>&nbsp;
+        </div>
+        <img id="coverArt" src="https://radiopotok.mobi/f/station/256/4.png" class="w-full relative rounded-2xl border p-1 md:p-4 bg-white" alt="" />
+      </div>
+      <div class="absolute w-full h-full z-20">
+        <div id="pageBG_preview" class="relative w-full h-full overflow-hidden hidden">
+          <video id="pageBG_video" class="center-video" autoplay="autoplay" loop="loop" x-webkit-airplay="allow" poster="https://radiopotok.mobi/f/station/256/4.png" src=""></video>
+          <div class="absolute inset-0 w-full h-full video-preview-overlay"></div>
+        </div>
+      </div>
+      <!-- Player -->
+      <div class="md:col-span-3 md:justify-around space-y-5 flex flex-col overflow-hidden pb-5 md:pb-0 z-30">
+        <!-- Current Track -->
+        <div class="order-last md:order-first mt-3 md:mt-0 space-y-3">
+          <h2 class="text-xl md:text-4xl text-center whitespace-nowrap md:whitespace-normal text-shadow" id="song">Прямой эфир</h2>
+          <h2 class="md:text-xl text-center whitespace-nowrap md:whitespace-normal text-shadow" id="artist"></h2>
+        </div>
+        <!-- Volume -->
+        <div class="flex justify-center show-no-device">
+          <form id="volume" class="relative" style="--min: 0; --max: 100; --val: 80">
+            <input id="playerVolumeSlider" type="range" list="tickmarks" min="0" max="100" step="1" value="80" aria-label="Громкость">
+          </form>
+        </div>
+        <!-- CONTROLS -->
+        <div class="grid gap-2 grid-cols-3 justify-items-center content-center items-center">
+          <!-- Listeners -->
+          <div class="flex justify-center items-center" title="Слушателей онлайн">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+            <span id="listeners">0</span>
+          </div>
+          <!-- Play/Pause Button -->
+          <button type="button" aria-label="Включить воспроизведение" class="outline-none rounded-full border ring ring-white transform md:hover:scale-110 transition duration-700 ease-in-out js--play-pause-button" onclick="if (!$(this).hasClass('active')) radioPlay(); else radioStop();">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14 md:h-20 md:w-20 js--svg-play" fill="none" stroke="currentColor" viewBox="0 0 512 512">
+              <g transform="translate(0,215)">
+                <path style="opacity: 1; fill: #ffffff; fill-opacity: 1; stroke: none; stroke-width: 10; stroke-miterlimit: 2; stroke-dasharray: none; stroke-opacity: 1;" d="M 967.55859 0 A 967.55906 967.55906 0 0 0 0 967.55859 A 967.55906 967.55906 0 0 0 967.55859 1935.1172 A 967.55906 967.55906 0 0 0 1935.1172 967.55859 A 967.55906 967.55906 0 0 0 967.55859 0 z M 725.66992 548.59375 L 1451.3379 967.55859 L 725.66992 1386.5254 L 725.66992 548.59375 z " transform="matrix(0.26458333,0,0,0.26458333,0,-215)" />
+              </g>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14 md:h-20 md:w-20 js--svg-pause hidden" fill="none" stroke="currentColor" viewBox="0 0 512 512">
+              <g transform="translate(0,215)">
+                <path style="opacity: 1; fill: #ffffff; fill-opacity: 1; stroke: none; stroke-width: 10; stroke-miterlimit: 2; stroke-dasharray: none; stroke-opacity: 1;" d="M 967.55859 0 C 710.94615 0.00012465164 464.84302 101.93822 283.39062 283.39062 C 101.93822 464.84302 0.00012465164 710.94615 0 967.55859 C 0.00011934732 1224.171 101.93822 1470.2742 283.39062 1651.7266 C 464.84303 1833.179 710.94614 1935.1171 967.55859 1935.1172 C 1224.1711 1935.1171 1470.2742 1833.179 1651.7266 1651.7266 C 1833.179 1470.2742 1935.1171 1224.1711 1935.1172 967.55859 C 1935.1171 710.94614 1833.179 464.84303 1651.7266 283.39062 C 1470.2742 101.93822 1224.171 0.00011934732 967.55859 0 z M 604.72461 483.7793 L 846.61328 483.7793 L 846.61328 1451.3379 L 604.72461 1451.3379 L 604.72461 483.7793 z M 1088.5039 483.7793 L 1330.3945 483.7793 L 1330.3945 1451.3379 L 1088.5039 1451.3379 L 1088.5039 483.7793 z" transform="matrix(0.26458333,0,0,0.26458333,0,-215)" />
+              </g>
+            </svg>
+          </button>
+          
+        </div>
+        <!-- /CONTROLS -->
+      </div>
+    </div>
+  </main>
+</div>
+
+<script>
+  const STATION_ID = 4;
+  const STATION_DATA = {"id":"4","url":"\/energy","stream":"[{\"title\":\"\u041f\u043e\u0442\u043e\u043a \u21161\", \"file\":\"https:\/\/pub0101.101.ru:8000\/stream\/air\/aac\/64\/99\", \"id\":\"1\"}]","stream_yandex":"","stream_info":"1","logo":"1","name":"Energy"};
+</script>
+<script src="../js/player.js"></script>
+  <script async src="../js/script.js?v=26"></script>
+  </div>
+
+
+</body>
+
+</html>
