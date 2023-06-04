@@ -1,0 +1,332 @@
+[
+  {
+    "name" : "Europa Plus",
+    "stream" : "http://ep256.hostingradio.ru:8052/europaplus256.mp3",
+    "picture" : "https://fmplay.ru/img/europaplus.webp"
+  },
+  {
+    "name" : "Комсомольская правда\nПрямой эфир (32 kbps)",
+    "stream" : "https://fed.fmplay.ru:8000/kpravda-32.aac",
+    "picture" : "https://fmplay.ru/img/kpravda.webp"
+  },
+  {
+    "name" : "Маяк\nПрямой эфир (32 kbps)",
+    "stream" : "https://fed.fmplay.ru:8000/mayak-32.aac",
+    "picture" : "https://fmplay.ru/img/mayak.webp"
+  },
+  {
+    "name" : "СоловьёвFM\nПрямой эфир (32 kbps)",
+    "stream" : "https://solovievfm.hostingradio.ru/solovievfm32.aacp",
+    "picture" : "https://telesochi.github.io/radiored/logo/solovievfm.jpg"
+  },
+  {
+    "name" : "Вести FM\nПрямой эфир (32 kbps)",
+    "stream" : "https://icecast-vgtrk.cdnvideo.ru/vestifm_aac_32kbps",
+    "picture" : "https://fmplay.ru/img/vesti.webp"
+  },
+  {
+    "name" : "Наше Радио (128 kbps)",
+    "stream" : "https://nashe1.hostingradio.ru:80/nashe-128.mp3",
+    "picture" : "https://fmplay.ru/img/nashe.webp"
+  },
+  {
+    "name" : "Звезда\nПрямой эфир (32 kbps)",
+    "stream" : "https://fed.fmplay.ru:8000/zvezda-32.aac",
+    "picture" : "https://fmplay.ru/img/zvezda.webp"
+  },
+  {
+    "name" : "АвтоРадио",
+    "stream" : "https://pub0101.101.ru:8443/stream/air/mp3/256/100",
+    "picture" : "https://fmplay.ru/img/avtoradio.webp"
+  },
+  {
+    "name" : "87,5 BUSINESS FM\nПервое деловое радио",
+    "stream" : "https://bfm.hostingradio.ru:9075/fm",
+    "picture" : "https://telesochi.github.io/radiored/logo/bfm.webp"
+  },
+  {
+    "name" : "RadioRED\nПрямой эфир (128 kbps)",
+    "stream" : "https://pub0102.101.ru:8443/stream/personal/aacp/64/1781512",
+    "picture" : "https://telesochi.github.io/radiored/logo/radiored.jpg"
+  },
+  {
+    "name" : "Коммерсантъ FM\nрадио новостей",
+    "stream" : "https://fed.fmplay.ru:8000/kommersant-32.aac",
+    "picture" : "https://telesochi.github.io/radiored/logo/kommersant.webp"
+  },
+  {
+    "name" : "Ретро ХИТ",
+    "stream" : "https://retro.amgradio.ru/Retro",
+    "picture" : "https://radiopotok.mobi/f/station/512/1570.png"
+  },
+  {
+    "name" : "Русское Радио (128 kbps)",
+    "stream" : "https://rusradio.hostingradio.ru/rusradio128.mp3",
+    "picture" : "https://fmplay.ru/img/rusradio.webp"
+  },
+  {
+    "name" : "Радио России\nПрямой эфир",
+    "stream" : "https://icecast-vgtrk.cdnvideo.ru/rrzonam_mp3_192kbps",
+    "picture" : "https://fmplay.ru/img/rrossii.webp"
+  },
+  {
+    "name" : "Радио Культура\nПрямой эфир (32 kbps)",
+    "stream" : "https://fed.fmplay.ru:8000/kultura-32.aac",
+    "picture" : "https://fmplay.ru/img/kultura.webp"
+  },
+  {
+    "name" : "Детский ХИТ",
+    "stream" : "https://deti.amgradio.ru/Deti",
+    "picture" : "https://radiopotok.mobi/f/station_webp/152/1395.webp"
+  },
+  {
+    "name" : "Sputnik\nПрямой эфир (32 kbps)",
+    "stream" : "https://fed.fmplay.ru:8000/sputnik-32.aac",
+    "picture" : "https://fmplay.ru/img/sputnik.webp"
+  },
+  {
+    "name" : "Москва FM",
+    "stream" : "https://icecast-vgtrk.cdnvideo.ru/moscowfm128",
+    "picture" : "https://telesochi.github.io/radiored/logo/moscow-fm.png"
+  },
+  {
+    "name" : "Радио МИР\nПрямой эфир (128 kbps)",
+    "stream" : "https://icecast-mirtv.cdnvideo.ru/radio_mir128",
+    "picture" : "https://fmplay.ru/img/mir.webp"
+  },
+  {
+    "name" : "Радио Республика\n104.8 FM Луганск",
+    "stream" : "https://radio.gtrklnr.ru:8443/republic.fm",
+    "picture" : "https://telesochi.github.io/radiored/logo/radio-respublika-lnr.png"
+  },
+  {
+    "name" : "Победа\n106.9 FM Луганск",
+    "stream" : "https://radio.gtrklnr.ru:8443/victori.fm",
+    "picture" : "https://telesochi.github.io/radiored/logo/radio-pobeda-lnr.jpg"
+  },
+  {
+    "name" : "СВОЁ РАДИО\n103.6 FM Луганск",
+    "stream" : "https://radio.gtrklnr.ru:8443/your.fm",
+    "picture" : "https://telesochi.github.io/radiored/logo/svoyo-radio.png"
+  },
+  {
+    "name" : "Спутник в Крыму\nПрямой эфир",
+    "stream" : "https://icecast-rian.cdnvideo.ru/voicesym",
+    "picture" : "https://telesochi.github.io/radiored/logo/sputnik-v-kryimu.png"
+  },
+  {
+    "name" : "Классное Радио",
+    "stream" : "https://schoolradio.hostingradio.ru:18026/schoolradio128.mp3",
+    "picture" : "https://telesochi.github.io/radiored/logo/klassnoeradio.jpg"
+  },
+  {
+  "name" : "Радио Фантастики (32 kbps)",
+  "stream" : "http://fantasyradioru.no-ip.biz:8008/;stream.mp3",
+  "picture" : "https://telesochi.github.io/radiored/logo/fantastika.jpg"
+  },
+  {
+    "name" : "Искатель",
+    "stream" : "https://iskatel.hostingradio.ru:8015/iskatel-128.mp3",
+    "picture" : "https://fmplay.ru/img/iskatel.webp"
+  },
+  {
+    "name" : "Спокойное Радио",
+    "stream" : "https://myradio24.org/6262",
+    "picture" : "https://telesochi.github.io/radiored/logo/nocover.jpg"
+  },
+  {
+    "name" : "Chocolate FM",
+    "stream" : "https://choco.hostingradio.ru:10010/fm",
+    "picture" : "https://fmplay.ru/img/chocolate.webp"
+  },
+  {
+    "name" : "Новая Волна",
+    "stream" : "https://s01.radio-tochka.com:4845/radio",
+    "picture" : "https://telesochi.github.io/radiored/logo/novaja-volna.png"
+  },
+  {
+    "name" : "Татар Радиосы",
+    "stream" : "https://stream.tatarradio.ru/kazan_128.aac",
+    "picture" : "https://telesochi.github.io/radiored/logo/tatar-radiosyi.webp"
+  },
+  {
+    "name" : "Полезное Радио\nПрямой эфир (Феодосия)",
+    "stream" : "https://www.liveradio.es/http://195.161.114.53:8000/feocast",
+    "picture" : "https://telesochi.github.io/radiored/logo/poleznoe.png"
+  },
+  {
+    "name" : "Русский ХИТ",
+    "stream" : "https://rp.amgradio.ru/RuWave48",
+    "picture" : "https://radiopotok.mobi/f/station_webp/152/257.webp"
+  },
+  {
+    "name" : "Радио Победы\nПрямой эфир",
+    "stream" : "http://178.46.155.73:8000/rp",
+    "picture" : "https://telesochi.github.io/radiored/logo/pobeda.png"
+  },
+  {
+    "name" : "Радиола",
+    "stream" : "https://radiola.hostingradio.ru/radiola_sam_64.aac",
+    "picture" : "https://fmplay.ru/img/radiolaekb.webp"
+  },
+  {
+    "name" : "Музыка СССР",
+    "stream" : "https://c6.radioboss.fm:18098/stream",
+    "picture" : "https://c6.radioboss.fm/w/artwork/98.png"
+  },
+  {
+    "name" : "Русский ПОП",
+    "stream" : "https://c6.radioboss.fm:18099/stream",
+    "picture" : "https://c6.radioboss.fm/w/artwork/99.png"
+  },
+  {
+    "name" : "Русский РОК",
+    "stream" : "https://c6.radioboss.fm:18097/stream",
+    "picture" : "https://c6.radioboss.fm/w/artwork/97.png"
+  },
+  {
+    "name" : "Зарубежные Хиты",
+    "stream" : "https://c6.radioboss.fm:18089/stream",
+    "picture" : "https://c6.radioboss.fm/w/artwork/89.png"
+  },
+  {
+    "name" : "Шансон",
+    "stream" : "https://c6.radioboss.fm:18096/stream",
+    "picture" : "https://c6.radioboss.fm/w/artwork/96.png"
+  },
+  {
+  "name" : "Русская классика\nПрямой эфир",
+  "stream" : "https://channels.fonotron.ru:8000/Chan_73_128.mp3",
+  "picture" : "https://telesochi.github.io/radiored/logo/russkaya-klassika.png"
+  },
+  {
+  "name" : "Советская эстрада",
+  "stream" : "https://evcast.mediacp.eu:2075/stream",
+  "picture" : "https://telesochi.github.io/radiored/logo/sovetestrada.jpg"
+  },
+  {
+    "name" : "Radio Nostalgia",
+    "stream" : "https://c18.radioboss.fm:8016/stream",
+    "picture" : "https://telesochi.github.io/radiored/logo/nostalgia.jpg"
+  },
+  {
+    "name" : "Дискотека 80/90",
+    "stream" : "https://myradio24.org/dance80?123",
+    "picture" : "https://telesochi.github.io/radiored/logo/diskoteka80-90.jpg"
+  },
+  {
+  "name" : "Old School Radio",
+  "stream" : "https://bigtunesradio.com:8003/oldschool.mp3",
+  "picture" : "https://telesochi.github.io/radiored/logo/oldschool.jpg"
+  },
+  {
+    "name" : "Старое Доброе Радио\nПрямой эфир",
+    "stream" : "http://91.189.162.134:8008/stream.aac",
+    "picture" : "https://telesochi.github.io/radiored/logo/staroe-dobroe-radio.jpg"
+  },
+  {
+    "name" : "Italo4You",
+    "stream" : "http://s4.radiohost.pl:8000/",
+    "picture" : "https://telesochi.github.io/radiored/logo/italo4you.jpg"
+  },
+  {
+    "name" : "1000 Italo Hits",
+    "stream" : "https://1000italohits.stream.laut.fm/1000italohits",
+    "picture" : "https://telesochi.github.io/radiored/logo/1000italohits.jpg"
+  },
+  {
+    "name" : "Italo New Generation",
+    "stream" : "https://cast1.torontocast.com:1315/stream",
+    "picture" : "https://telesochi.github.io/radiored/logo/new.png"
+  },
+  {
+    "name" : "RMI Italo Disco Classic",
+    "stream" : "https://cast1.torontocast.com:1165/stream",
+    "picture" : "https://telesochi.github.io/radiored/logo/classic.png"
+  },
+  {
+    "name" : "RMI Euro Disco",
+    "stream" : "https://cast1.torontocast.com:1335/stream",
+    "picture" : "https://telesochi.github.io/radiored/logo/euro-disco.png"
+  },
+  {
+    "name" : "Ретро ФМ\nПрямой эфир (256 kbps)",
+    "stream" : "https://retro.hostingradio.ru:8043/retro256.mp3",
+    "picture" : "https://fmplay.ru/img/retro.webp"
+  },
+  {
+    "name" : "Радио ЖиZнь 9Z.ZFM\nПрямой эфир",
+    "stream" : "https://stream.zhizn-fm.ru:8443/life?2610",
+    "picture" : "https://telesochi.github.io/radiored/logo/zhizn.jpg"
+  },
+  {
+    "name" : "VoltageFM",
+    "stream" : "https://radio.voltagefm.ru:9009/VOLTAGEFM",
+    "picture" : "https://telesochi.github.io/radiored/logo/voltage-fm.png"
+  },
+  {
+  "name" : "VoltageFM CCCP",
+  "stream" : "https://radio.voltagefm.ru:9009/VoltageUSSR_64_aac",
+  "picture" : "https://telesochi.github.io/radiored/logo/voltage-ussr.jpg"
+  },
+  {
+  "name" : "VoltageFM Rock",
+  "stream" : "https://radio.voltagefm.ru:9009/VoltageROCK_64_aac",
+  "picture" : "https://telesochi.github.io/radiored/logo/voltage-rock.jpg"
+  },
+  {
+    "name" : "Радио Шансон\nПрямой эфир",
+    "stream" : "https://fed.fmplay.ru:8000/shanson-32.aac",
+    "picture" : "https://fmplay.ru/img/shanson.webp"
+  },
+  {
+    "name" : "Маруся ФМ\nПрямой эфир",
+    "stream" : "https://fed.fmplay.ru:8000/marusya-32.aac",
+    "picture" : "https://fmplay.ru/img/marusya.webp"
+  },
+  {
+    "name" : "Meta Radio",
+    "stream" : "http://play.metaradio.ru:80/mradio.aacp",
+    "picture" : "https://telesochi.github.io/radiored/logo/metaradio.png"
+  },
+  {
+    "name" : "Радио СССР",
+    "stream" : "https://myradio24.org/ussr",
+    "picture" : "https://telesochi.github.io/radiored/logo/radioussr.webp"
+  },
+  {
+    "name" : "SpaceSynth",
+    "stream" : "https://myradio24.org/1987",
+    "picture" : "https://telesochi.github.io/radiored/logo/spacesynth.jpg"
+  },
+  {
+    "name" : "Synthetic FM",
+    "stream" : "https://mediaserv38.live-streams.nl:18030/stream",
+    "picture" : "https://telesochi.github.io/radiored/logo/synthetic-fm.jpg"
+  },
+  {
+    "name" : "Synthetic 2 FM",
+    "stream" : "https://mediaserv38.live-streams.nl:18040/live",
+    "picture" : "https://telesochi.github.io/radiored/logo/synthetic2-fm.png"
+  },
+  {
+  "name" : "True Color Radio",
+  "stream" : "http://online.truecolorsradio.com:9000/45329",
+  "picture" : "https://telesochi.github.io/radiored/logo/truecolor.webp"
+  },
+  {
+  "name" : "Чеширское радио",
+  "stream" : "https://myradio24.org/cheshire",
+  "picture" : "https://telesochi.github.io/radiored/logo/cheshirskoe.jpg"
+  },
+  {
+    "name" : "Лихие 90-е",
+    "stream" : "https://rr-90.hostingradio.ru/rr9096.aacp",
+    "picture" : "https://telesochi.github.io/radiored/logo/90.jpg"
+  },
+  {
+    "name" : "SOMA.FM Underground 80S",
+    "stream" : "https://ice1.somafm.com/u80s-128-mp3",
+    "picture" : "http://somafm.com/logos/512/u80s512.png"
+  }
+]
